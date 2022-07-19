@@ -36,9 +36,6 @@ public class Tile : MonoBehaviour {
     }
 
     public void Trigger(TileState state) {
-        animator.enabled = false;
-        animator.enabled = true;
-
         if (state == TileState.Valid) {
             if (Random.Range(0, 2) == 0) {
                 tileColor--;
@@ -55,7 +52,7 @@ public class Tile : MonoBehaviour {
             animator.Play("Valid " + tileColor);
             return;
         }
-
+        
         animator.Play(state.ToString());
     }
 
@@ -67,6 +64,13 @@ public class Tile : MonoBehaviour {
         }
     }
 
+    public void DestroyWithAnimation() {
+        animator.Play("End");
+    }
+
+    public void DestroyImmediately() {
+        Destroy(this.gameObject);
+    }
     
     public static List<(int, int)> GetAdjacentCoordinates((int, int) position, int gridSize) 
         => GetAdjacentCoordinates(position.Item1, position.Item2, gridSize);
@@ -101,6 +105,7 @@ public class Tile : MonoBehaviour {
 }
 
 public enum TileState {
+    Idle,
     Preview,
     Valid,
     Invalid,

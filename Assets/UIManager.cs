@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class UIManager : MonoBehaviour {
@@ -11,6 +12,9 @@ public class UIManager : MonoBehaviour {
     [SerializeField] Animator darkPanel;
     [SerializeField] Animator hintWindow;
     [SerializeField] Button hintButton;
+    [SerializeField] Animator pauseMenu;
+    [SerializeField] TextMeshProUGUI pauseLevelLabel;
+    [SerializeField] TextMeshProUGUI pauseHeartsLabel;
 
     GameManager gameManager;
     [HideInInspector] public bool timerPaused;
@@ -38,19 +42,24 @@ public class UIManager : MonoBehaviour {
         if (lives < 0) return;
 
         hearts[lives].Decrease();
+        UpdatePauseHearts(lives);
     }
 
     public void IncreaseHearts(int lives) {
         if (lives > 3) return;
 
         hearts[lives - 1].Increase();
+        UpdatePauseHearts(lives);
     }
+
+    public void UpdatePauseHearts(int lives) => pauseHeartsLabel.text = lives + " lives left";
 
     public void NextLevel(int level) {
         nextButton.GetComponent<Animator>().ResetTrigger("Appear");
         nextButton.GetComponent<Animator>().SetTrigger("NextLevel");
 
         levelLabel.text = "Level " + level;
+        pauseLevelLabel.text = "Level " + level;
     }
 
     public void FinishLevel() {
@@ -77,4 +86,19 @@ public class UIManager : MonoBehaviour {
         hintButton.interactable = b;
     }
 
+    public void ShowPauseMenu() {
+        darkPanel.SetBool("Darker", true);
+        pauseMenu.SetBool("Show", true);
+        gameManager.Pause();
+    }
+
+    public void HidePauseMenu() {
+        darkPanel.SetBool("Darker", false);
+        pauseMenu.SetBool("Show", false);
+        Invoke(nameof(ResumeWrapper), 0.1f);
+    }
+
+    public void Restart() {
+        SceneManager.LoadScene(0);
+    }
 }

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] TileContainer container;
     [SerializeField] float previewDelay = 1f;
     [SerializeField] float finishAnimationDelay = 0.3f;
+    [SerializeField] float tileEndDelay = 0.3f;
 
     UIManager ui;
     List<Tile> tilesTemp;
@@ -72,10 +73,13 @@ public class GameManager : MonoBehaviour {
 #endif
     }
 
-    public void NextLevel() {
+    public void NextLevel() => StartCoroutine(NextLevelCoroutine());
+
+    IEnumerator NextLevelCoroutine() {
         (numberOfTiles, numberOfSequencedTiles) = DifficultyConfig(levelProgression);
 
         ClearLevel();
+        yield return new WaitForSeconds(tileEndDelay);
         InitTiles(numberOfTiles);
         GenerateSequence(numberOfSequencedTiles);
     }
@@ -178,7 +182,7 @@ public class GameManager : MonoBehaviour {
             levelProgression ++;
             inputEnabled = false;
             ui.FinishLevel();
-            
+
             var tilesInOrder = GenerateFinishingSequence(tile);
             StartCoroutine(AnimateFinishingSequence(tilesInOrder));
         }
@@ -188,7 +192,7 @@ public class GameManager : MonoBehaviour {
         currentIndexInSequence = 0;
         var allTiles = FindObjectsOfType<Tile>();
         for (int i = 0; i < allTiles.Length; i++) {
-            Destroy(allTiles[i].gameObject);
+            allTiles[i].DestroyWithAnimation();
         }
         ui.NextLevel(levelProgression);
     }
@@ -254,7 +258,9 @@ public class GameManager : MonoBehaviour {
 
                 foreach (var adjacentPos in adjacentPositions) {
                     var newTile = Tile.GetTileAt(adjacentPos, tilesInSequence);
+
                     if (newTile.finishAnimationPlayed) continue;
+                    if (tilesInOrder[i + 1].Contains(newTile)) continue;
 
                     newTile.finishAnimationPlayed = true;
                     tilesInOrder[i + 1].Add(newTile);
@@ -278,10 +284,23 @@ public class GameManager : MonoBehaviour {
     IEnumerator AnimateFinishingSequence(List<List<Tile>> tilesInOrder) {
         foreach (var iteration in tilesInOrder) {
             foreach (var tile in iteration) {
+                tile.Trigger(Idle);
+            }
+        }
+
+        foreach (var iteration in tilesInOrder) {
+            foreach (var tile in iteration) {
                 tile.Trigger(Valid);
             }
 
             yield return new WaitForSeconds(finishAnimationDelay);
         }
+    }
+
+    public void GetExtraHeart() {
+        if (lives >= 3) return;
+        lives ++;
+        ui.IncreaseHearts(lives);
+        ui.HidePauseMenu();
     }
 }
