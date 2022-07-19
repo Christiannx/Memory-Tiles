@@ -9,6 +9,12 @@ public class MainMenuManager : MonoBehaviour {
     [SerializeField] Animator confirmationPage;
     [SerializeField] TextMeshProUGUI highscoreLabel;
 
+    AudioSource click;
+
+    void Awake() {
+        click = GetComponent<AudioSource>();
+    }
+
     void Start() {
         var save = FindObjectOfType<Save>();
 
@@ -30,21 +36,24 @@ public class MainMenuManager : MonoBehaviour {
 
     public void WorkInProgress() {
         canvas.Play("WIP", -1, 0);
+        PlayClick();
     }
 
     public void ShowSettings() => Show(settingsPage);
-    public void ShowConfirmation() => confirmationPage.SetBool("Show", true);
+    public void ShowConfirmation() {confirmationPage.SetBool("Show", true); click.Play();}
     public void HideSettings() => Hide(settingsPage);
-    public void HideConfirmation() => confirmationPage.SetBool("Show", false);
+    public void HideConfirmation() {confirmationPage.SetBool("Show", false); click.Play();}
 
     public void Show(Animator window) {
         darken.SetBool("Darker", true);
         window.SetBool("Show", true);
+        PlayClick();
     }
 
     public void Hide(Animator window) {
         darken.SetBool("Darker", false);
         window.SetBool("Show", false);
+        PlayClick();
     }
 
     public void Reset() {
@@ -52,5 +61,16 @@ public class MainMenuManager : MonoBehaviour {
         highscoreLabel.text = "level - ";
         HideConfirmation();
         HideSettings();
+    }
+
+    public void PlayClick() {
+        if (!click.isPlaying && FindObjectOfType<Save>().sound) {
+            click.Play();
+        }
+    }
+
+    public void SwitchHasSound() {
+        var save = FindObjectOfType<Save>();
+        save.sound = !save.sound;
     }
 }

@@ -83,7 +83,8 @@ public class GameManager : MonoBehaviour {
         (numberOfTiles, numberOfSequencedTiles) = DifficultyConfig(levelProgression);
 
         ClearLevel();
-        yield return new WaitForSeconds(tileEndDelay);
+        if (levelProgression > 1)
+            yield return new WaitForSeconds(tileEndDelay);
         InitTiles(numberOfTiles);
         GenerateSequence(numberOfSequencedTiles);
     }
@@ -245,17 +246,18 @@ public class GameManager : MonoBehaviour {
     static (int, int) DifficultyConfig(int level) {
         return level switch {
             1        => (2, 4),
-            2        => (3, 4),
-            3 or 4   => (3, 4),
-            5 or 6   => (3, 5),
-            7        => (4, 6),
-            8 or 9   => (5, 4),
-            10 or 11 => (5, 5),
-            11 or 12 => (5, 6),
-            13 or 14 => (6, 4),
-            15 or 16 => (6, 5),
-            17 or 18 => (6, 6),
-            _        => (6, 7)
+            2 or 3   => (3, 4),
+            4 or 5   => (3, 5),
+            6 or 7   => (3, 6),
+            8 or 9   => (4, 4),
+            10 or 11 => (4, 5),
+            11 or 12 => (4, 6),
+            13 or 14 => (5, 4),
+            15 or 16 => (5, 5),
+            17 or 18 => (5, 6),
+            19 or 20 => (6, 4),
+            21 or 22 => (6, 5),
+            _        => (6, 6)
         };
     }
 
