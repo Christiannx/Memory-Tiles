@@ -49,23 +49,23 @@ public class Tile : MonoBehaviour {
                 }
             }
 
-            animator.Play("Valid " + tileColor);
+            animator.Play("Valid " + tileColor, -1, 0);
             return;
         }
         
-        animator.Play(state.ToString());
+        animator.Play(state.ToString(), -1, 0);
     }
 
     public void ShowHint(bool fade) {
         if (fade) {
-            indexAnimator.Play("Hint");
+            indexAnimator.Play("Hint", -1, 0);
         } else {
-            indexAnimator.Play("Reveal");
+            indexAnimator.Play("Reveal", -1, 0);
         }
     }
 
     public void DestroyWithAnimation() {
-        animator.Play("End");
+        animator.Play("End", -1, 0);
     }
 
     public void DestroyImmediately() {

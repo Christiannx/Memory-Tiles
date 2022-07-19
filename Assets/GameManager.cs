@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] float tileEndDelay = 0.3f;
 
     UIManager ui;
+    Save save;
     List<Tile> tilesTemp;
     List<Tile> tilesInSequence;
     bool inputEnabled = false;
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour {
 
     void Awake() {
         ui = FindObjectOfType<UIManager>();
+        save = FindObjectOfType<Save>();
     }
 
     void Start() {
@@ -178,6 +180,13 @@ public class GameManager : MonoBehaviour {
             } else {
                 inputEnabled = false;
                 ui.ShowGameOverMenu();
+                
+                save.LoadData();
+                var highscore = save.highscore;
+                if (levelProgression > highscore) {
+                    save.highscore = levelProgression;
+                    save.SaveData();
+                }
             }
         }
 
@@ -292,12 +301,6 @@ public class GameManager : MonoBehaviour {
     }
 
     IEnumerator AnimateFinishingSequence(List<List<Tile>> tilesInOrder) {
-        foreach (var iteration in tilesInOrder) {
-            foreach (var tile in iteration) {
-                tile.Trigger(Idle);
-            }
-        }
-
         foreach (var iteration in tilesInOrder) {
             foreach (var tile in iteration) {
                 tile.Trigger(Valid);
