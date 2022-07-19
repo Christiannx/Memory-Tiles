@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour {
     }
 
     void Start() {
-        Application.targetFrameRate = 120;
         Invoke(nameof(NextLevel), 0.1f);
     }
 
@@ -180,7 +179,8 @@ public class GameManager : MonoBehaviour {
                 ShowHint(currentIndexInSequence, 2);
             } else {
                 inputEnabled = false;
-                ui.ShowGameOverMenu();
+                ShowHint(currentIndexInSequence, 2);
+                Invoke(nameof(GameOverMenuWrapper), 0.5f);
                 
                 save.LoadData();
                 var highscore = save.highscore;
@@ -200,6 +200,8 @@ public class GameManager : MonoBehaviour {
             StartCoroutine(AnimateFinishingSequence(tilesInOrder));
         }
     }
+
+    void GameOverMenuWrapper() => ui.ShowGameOverMenu();
 
     void ClearLevel() {
         currentIndexInSequence = 0;
@@ -257,7 +259,7 @@ public class GameManager : MonoBehaviour {
             17 or 18 => (5, 6),
             19 or 20 => (6, 4),
             21 or 22 => (6, 5),
-            _        => (6, 6)
+            _        => (6, 6 )
         };
     }
 

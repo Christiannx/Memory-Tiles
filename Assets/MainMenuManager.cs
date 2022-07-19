@@ -12,6 +12,7 @@ public class MainMenuManager : MonoBehaviour {
     AudioSource click;
 
     void Awake() {
+        Application.targetFrameRate = 120;
         click = GetComponent<AudioSource>();
     }
 
