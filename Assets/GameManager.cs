@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour {
     bool inputEnabled = false;
     int currentIndexInSequence = 0;
     int lives = 3;
+    int extraLivesCounter = 0;
+    int hintCounter = 0;
     int levelProgression = 1;
     int numberOfTiles;
     int numberOfSequencedTiles;
@@ -175,6 +177,7 @@ public class GameManager : MonoBehaviour {
                 ShowHint(currentIndexInSequence, 2);
             } else {
                 inputEnabled = false;
+                ui.ShowGameOverMenu();
             }
         }
 
@@ -198,10 +201,17 @@ public class GameManager : MonoBehaviour {
     }
 
     public void ShowHint(int startIndex, int amount) {
+        if (hintCounter > 3) return;
+
         var range = Mathf.Min(startIndex + amount, Mathf.Pow(numberOfTiles, 2));
         for (int i = startIndex; i < range; i++) {
             if (tilesInSequence[i].sequence == -1) break;
             tilesInSequence[i].ShowHint(true);
+        }
+        
+        hintCounter ++;
+        if (hintCounter > 2) {
+            ui.DisableHints();
         }
     }
 
@@ -298,9 +308,35 @@ public class GameManager : MonoBehaviour {
     }
 
     public void GetExtraHeart() {
-        if (lives >= 3) return;
+        if (lives >= 3) {
+            if (Application.platform == RuntimePlatform.Android)
+                _ShowAndroidToastMessage("You already have 3 lives");
+            return;
+        }
+
         lives ++;
+        extraLivesCounter ++;
+        if (extraLivesCounter >= 3) {
+            ui.DisableExtraHearts();
+        }
+
+
         ui.IncreaseHearts(lives);
         ui.HidePauseMenu();
+        ui.HideGameOverMenu();
+        ShowHint(currentIndexInSequence, 2);
+    }
+
+    private void _ShowAndroidToastMessage(string message) {
+        AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject unityActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+
+        if (unityActivity != null) {
+            AndroidJavaClass toastClass = new AndroidJavaClass("android.widget.Toast");
+            unityActivity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
+                AndroidJavaObject toastObject = toastClass.CallStatic<AndroidJavaObject>("makeText", unityActivity, message, 0);
+                toastObject.Call("show");
+            }));
+        }
     }
 }

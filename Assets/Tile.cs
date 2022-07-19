@@ -69,7 +69,7 @@ public class Tile : MonoBehaviour {
     }
 
     public void DestroyImmediately() {
-        Destroy(this.gameObject);
+        Destroy(this.gameObject); 
     }
     
     public static List<(int, int)> GetAdjacentCoordinates((int, int) position, int gridSize) 

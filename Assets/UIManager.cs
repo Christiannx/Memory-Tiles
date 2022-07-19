@@ -15,10 +15,15 @@ public class UIManager : MonoBehaviour {
     [SerializeField] Animator pauseMenu;
     [SerializeField] TextMeshProUGUI pauseLevelLabel;
     [SerializeField] TextMeshProUGUI pauseHeartsLabel;
+    [SerializeField] TextMeshProUGUI gameOverLevelLabel;
+    [SerializeField] Animator gameOverMenu;
+    [SerializeField] Button extraHeartsButtonGameOver;
+    [SerializeField] Button extraHeartsButtonPause;
 
     GameManager gameManager;
     [HideInInspector] public bool timerPaused;
     float timeElapsed;
+    bool canGetHint = true;
 
     void Awake() {
         gameManager = FindObjectOfType<GameManager>();
@@ -60,6 +65,7 @@ public class UIManager : MonoBehaviour {
 
         levelLabel.text = "Level " + level;
         pauseLevelLabel.text = "Level " + level;
+        gameOverLevelLabel.text = "You reached level " + level;
     }
 
     public void FinishLevel() {
@@ -68,37 +74,49 @@ public class UIManager : MonoBehaviour {
         hintButton.interactable = false;
     }
 
-    public void ShowHintWindow() {
+    public void ShowHintWindow() => ShowMenu(hintWindow);
+    public void ShowPauseMenu() => ShowMenu(pauseMenu);
+    public void ShowGameOverMenu() => ShowMenu(gameOverMenu);
+
+    public void HideHintWindow() => HideMenu(hintWindow);
+    public void HidePauseMenu() => HideMenu(pauseMenu);
+    public void HideGameOverMenu() => HideMenu(gameOverMenu);
+
+    public void ShowMenu(Animator menu) {
         darkPanel.SetBool("Darker", true);
-        hintWindow.SetBool("Show", true);
+        menu.SetBool("Show", true);
         gameManager.Pause();
     }
-    
-    public void HideHintWindow() {
+
+    public void HideMenu(Animator menu) {
         darkPanel.SetBool("Darker", false);
-        hintWindow.SetBool("Show", false);
+        menu.SetBool("Show", false);
         Invoke(nameof(ResumeWrapper), 0.1f);
     }
 
     void ResumeWrapper() => gameManager.Resume();
 
     public void HintButtonInteractable(bool b) {
-        hintButton.interactable = b;
-    }
-
-    public void ShowPauseMenu() {
-        darkPanel.SetBool("Darker", true);
-        pauseMenu.SetBool("Show", true);
-        gameManager.Pause();
-    }
-
-    public void HidePauseMenu() {
-        darkPanel.SetBool("Darker", false);
-        pauseMenu.SetBool("Show", false);
-        Invoke(nameof(ResumeWrapper), 0.1f);
+        if (canGetHint) {
+            hintButton.interactable = b;
+        }
     }
 
     public void Restart() {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public void LoadScene(string name) {
+        SceneManager.LoadScene(name);
+    }
+
+    public void DisableExtraHearts() {
+        extraHeartsButtonGameOver.interactable = false;
+        extraHeartsButtonPause.interactable = false;
+    }
+
+    public void DisableHints() {
+        hintButton.interactable = false;
+        canGetHint = false;
     }
 }

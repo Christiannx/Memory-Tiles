@@ -31,22 +31,13 @@ AnimationClip:
         outWeight: 0.18461058
       - serializedVersion: 3
         time: 0.18333334
-        value: 67.90982
+        value: 143.28
         inSlope: 216.84103
         outSlope: 216.84103
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.17377691
-      - serializedVersion: 3
-        time: 0.5833333
-        value: 143.28
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -76,7 +67,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5833333
+    m_StopTime: 0.18333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -106,22 +97,13 @@ AnimationClip:
         outWeight: 0.18461058
       - serializedVersion: 3
         time: 0.18333334
-        value: 67.90982
+        value: 143.28
         inSlope: 216.84103
         outSlope: 216.84103
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.17377691
-      - serializedVersion: 3
-        time: 0.5833333
-        value: 143.28
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
