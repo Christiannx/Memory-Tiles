@@ -38,14 +38,6 @@ public class GameManager : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetMouseButtonDown(1)) {
-            NextLevel();
-        }
-
-        if (Input.GetKeyDown(KeyCode.A)) {
-            ClearLevel();
-        }
-
         if (!inputEnabled) return;
 
         if (Input.touchCount > 0) {

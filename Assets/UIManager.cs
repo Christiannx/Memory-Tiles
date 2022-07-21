@@ -108,4 +108,11 @@ public class UIManager : MonoBehaviour {
         if (amount > 3) return;
         hintsLabel.text = amount + "/3 hints";
     }
+
+    public void DontDestroy(GameObject parent) {
+        DontDestroyOnLoad(parent);
+        Destroy(parent, 1);
+        HidePauseMenu();
+        HideGameOverMenu();
+    }
 }
