@@ -1733,6 +1733,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3defa4f5354f8f488ea9b158bb8373c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finishSoundDelay: 0.08
+  click: {fileID: 8300000, guid: 8c258dca7e08fb1438113b0b75348f71, type: 3}
+  validAudioClips:
+  - {fileID: 8300000, guid: b3b37cd5d2ac9e2479653967a4ebcb93, type: 3}
+  - {fileID: 8300000, guid: e73c18a90524ee947980041799515dda, type: 3}
+  - {fileID: 8300000, guid: 93698203d27b3ab48967d5e4a674331f, type: 3}
+  - {fileID: 8300000, guid: f03e02379e08856498f105f7280e7b0d, type: 3}
+  - {fileID: 8300000, guid: b0948368476c40d439806903bff1f2ec, type: 3}
+  - {fileID: 8300000, guid: c3e4ba042cfc42c46ab472fa9bdb82a8, type: 3}
+  previewClips:
+  - {fileID: 8300000, guid: 4982debf701a29e45abcd7130c45258b, type: 3}
+  - {fileID: 8300000, guid: 2ca7b17a2956c7841b7b8a5697234e08, type: 3}
 --- !u!1 &607424588
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,6 +5499,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4533894746249638469, guid: f2896dd059eeaf541b114a993f114719, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1.8425
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533894746249638469, guid: f2896dd059eeaf541b114a993f114719, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.3788
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: f2896dd059eeaf541b114a993f114719, type: 3}
@@ -5584,6 +5604,10 @@ PrefabInstance:
       propertyPath: hintWindow
       value: 
       objectReference: {fileID: 292328134}
+    - target: {fileID: 5707228198702246550, guid: 611c94f3191f0ba4cac05cd385d062ef, type: 3}
+      propertyPath: hintsLabel
+      value: 
+      objectReference: {fileID: 1137542629}
     - target: {fileID: 5707228198702246550, guid: 611c94f3191f0ba4cac05cd385d062ef, type: 3}
       propertyPath: levelLabel
       value: 

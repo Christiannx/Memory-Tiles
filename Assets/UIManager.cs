@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour {
     [SerializeField] RectTransform nextButton;
     [SerializeField] Heart[] hearts;
     [SerializeField] TextMeshProUGUI levelLabel;
-    [SerializeField] TextMeshProUGUI timerLabel;
+    [SerializeField] TextMeshProUGUI hintsLabel;
     [SerializeField] Animator darkPanel;
     [SerializeField] Animator hintWindow;
     [SerializeField] Button hintButton;
@@ -21,26 +21,10 @@ public class UIManager : MonoBehaviour {
     [SerializeField] Button extraHeartsButtonPause;
 
     GameManager gameManager;
-    [HideInInspector] public bool timerPaused;
-    float timeElapsed;
     bool canGetHint = true;
 
     void Awake() {
         gameManager = FindObjectOfType<GameManager>();
-    }
-
-    void ResetTimer() {
-        timeElapsed = 0f;
-    }
-
-    void Update() {
-        if (!timerPaused)
-            timeElapsed += Time.deltaTime;
-
-        var minutes = (int)(timeElapsed / 60);
-        var seconds = (int)(timeElapsed % 60);
-        var optionalZero = seconds < 10? "0" : "";
-        timerLabel.text = minutes + ":" + optionalZero + seconds;
     }
 
     public void DecreaseHearts(int lives) {
@@ -118,5 +102,10 @@ public class UIManager : MonoBehaviour {
     public void DisableHints() {
         hintButton.interactable = false;
         canGetHint = false;
+    }
+
+    public void UpdateHints(int amount) {
+        if (amount > 3) return;
+        hintsLabel.text = amount + "/3 hints";
     }
 }

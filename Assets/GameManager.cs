@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
 
     UIManager ui;
     Save save;
+    SoundManager sound;
     List<Tile> tilesTemp;
     List<Tile> tilesInSequence;
     bool inputEnabled = false;
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour {
     void Awake() {
         ui = FindObjectOfType<UIManager>();
         save = FindObjectOfType<Save>();
+        sound = FindObjectOfType<SoundManager>();
     }
 
     void Start() {
@@ -156,6 +158,10 @@ public class GameManager : MonoBehaviour {
 
             if (tile.sequence != -1) {
                 tile.Trigger(Preview);
+                if (tile.sequence == numberOfSequencedTiles - 1)
+                    sound.Preview(false);
+                else
+                    sound.Preview(true);
             }
             else 
                 break;
@@ -169,6 +175,9 @@ public class GameManager : MonoBehaviour {
         if (tile.sequence == currentIndexInSequence) {
             tile.Trigger(Valid);
             currentIndexInSequence++;
+
+            if (currentIndexInSequence != numberOfSequencedTiles)
+                sound.Valid(tile.sequence, numberOfTiles);
         } else {
             tile.Trigger(Invalid);
 
@@ -194,7 +203,9 @@ public class GameManager : MonoBehaviour {
         if (currentIndexInSequence == numberOfSequencedTiles) {
             levelProgression ++;
             inputEnabled = false;
+
             ui.FinishLevel();
+            sound.FinishSound(numberOfSequencedTiles - 1);
 
             var tilesInOrder = GenerateFinishingSequence(tile);
             StartCoroutine(AnimateFinishingSequence(tilesInOrder));
@@ -213,34 +224,31 @@ public class GameManager : MonoBehaviour {
     }
 
     public void ShowHint(int startIndex, int amount) {
-        if (hintCounter > 3) return;
-
         var range = Mathf.Min(startIndex + amount, Mathf.Pow(numberOfTiles, 2));
         for (int i = startIndex; i < range; i++) {
             if (tilesInSequence[i].sequence == -1) break;
             tilesInSequence[i].ShowHint(true);
         }
-        
-        hintCounter ++;
-        if (hintCounter > 2) {
-            ui.DisableHints();
-        }
     }
 
     public void Pause() {
         inputEnabled = false;
-        ui.timerPaused = true;
     }
 
     public void Resume() {
         inputEnabled = true;
-        ui.timerPaused = false;
     }
 
     public void ShowHintButton() {
         ui.HideHintWindow();
-        Invoke(nameof(ShowHintWrapper), 0.2f);
+        hintCounter ++;
+        ui.UpdateHints(hintCounter);
+        if (hintCounter > 2) {
+            ui.DisableHints();
+            return;
+        }
 
+        Invoke(nameof(ShowHintWrapper), 0.2f);
     }
     
     void ShowHintWrapper() => ShowHint(currentIndexInSequence, 2);

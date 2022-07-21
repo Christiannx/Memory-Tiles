@@ -1,4 +1,10 @@
+using System;
+using System.Collections;
+
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 using TMPro;
 
 public class MainMenuManager : MonoBehaviour {
@@ -8,12 +14,16 @@ public class MainMenuManager : MonoBehaviour {
     [SerializeField] Animator settingsPage;
     [SerializeField] Animator confirmationPage;
     [SerializeField] TextMeshProUGUI highscoreLabel;
+    [SerializeField] Toggle soundToggle;
+    [SerializeField] AudioClip[] playAudios;
 
     AudioSource click;
+    [HideInInspector] public bool playAnimationDone;
 
     void Awake() {
         Application.targetFrameRate = 120;
         click = GetComponent<AudioSource>();
+        playAnimationDone = false;
     }
 
     void Start() {
@@ -25,10 +35,24 @@ public class MainMenuManager : MonoBehaviour {
         } else {
             highscoreLabel.text = "level -";
         }
+
+        soundToggle.isOn = save.sound;
     }
 
     public void Play() {
         canvas.Play("Play", -1, 0);
+
+        DisableAllButtons();
+        StartCoroutine(PlaySound());
+        StartCoroutine(LoadSceneAsync());
+    }
+
+    IEnumerator PlaySound() {
+        if (!FindObjectOfType<Save>().sound) yield break;
+        foreach (var clip in playAudios) {
+            click.PlayOneShot(clip);
+            yield return new WaitForSeconds(0.07f);
+        }
     }
 
     public void Quit() {
@@ -58,14 +82,14 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     public void Reset() {
-        FindObjectOfType<Save>().ResetData();
+        FindObjectOfType<Save>().ResetData(); 
         highscoreLabel.text = "level - ";
         HideConfirmation();
         HideSettings();
     }
 
     public void PlayClick() {
-        if (!click.isPlaying && FindObjectOfType<Save>().sound) {
+        if (FindObjectOfType<Save>().sound) {
             click.Play();
         }
     }
@@ -73,5 +97,24 @@ public class MainMenuManager : MonoBehaviour {
     public void SwitchHasSound() {
         var save = FindObjectOfType<Save>();
         save.sound = !save.sound;
+    }
+
+    public void DisableAllButtons() {
+        var buttons = FindObjectsOfType<Button>();
+        Array.ForEach(buttons, button => button.interactable = false);
+    }
+
+    IEnumerator LoadSceneAsync() {
+        yield return null;
+    
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("MainScene");
+        asyncLoad.allowSceneActivation = false;
+        while (!asyncLoad.isDone) {
+            if (playAnimationDone) {
+                asyncLoad.allowSceneActivation = true;
+            }
+
+            yield return null;
+        }
     }
 }

@@ -30,9 +30,11 @@ public class Tile : MonoBehaviour {
     [SerializeField] TextMeshProUGUI indexLabel;
     [SerializeField] Animator indexAnimator;
     Animator animator;
+    SoundManager sound;
 
     void Awake() {
         animator = GetComponent<Animator>();
+        sound = FindObjectOfType<SoundManager>();
     }
 
     public void Trigger(TileState state) {

@@ -1,51 +1,71 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
-<project xmlns="http://audacity.sourceforge.net/xml/" projname="Valid Audacity_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.6292291667" vpos="0" h="0.0000000000" zoom="338.5416666667" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Valid Audacity_data" version="1.3.0" audacityversion="2.4.2" sel0="1.0958769231" sel1="1.0958769231" vpos="0" h="0.0000000000" zoom="338.5416666667" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
 	<tags>
-		<tag name="ARTIST" value="Christian Rupp"/>
 		<tag name="compatible_brands" value=""/>
+		<tag name="ARTIST" value="Christian Rupp"/>
 		<tag name="Copyright" value="Christian Rupp"/>
-		<tag name="major_brand" value=""/>
-		<tag name="Software" value="Lavf58.76.100"/>
 		<tag name="YEAR" value="2022"/>
+		<tag name="Software" value="Lavf58.76.100"/>
+		<tag name="major_brand" value=""/>
 		<tag name="minor_version" value=""/>
 		<tag name="TITLE" value="Dystopia"/>
 	</tags>
-	<wavetrack name="2022-07-20 00-17-20" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
-		<waveclip offset="0.00000000" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="30140">
-				<waveblock start="0">
-					<simpleblockfile filename="e0808bb4.au" len="30140" min="-0.084154" max="0.084567" rms="0.027819"/>
-				</waveblock>
-			</sequence>
-			<envelope numpoints="0"/>
-		</waveclip>
-	</wavetrack>
-	<wavetrack name="2022-07-20 00-17-20" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
-		<waveclip offset="0.00000000" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="30206">
-				<waveblock start="0">
-					<simpleblockfile filename="e080895b.au" len="30206" min="-0.084121" max="0.084506" rms="0.026372"/>
-				</waveblock>
-			</sequence>
-			<envelope numpoints="0"/>
-		</waveclip>
-	</wavetrack>
-	<wavetrack name="2022-07-20 00-17-20" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
-		<waveclip offset="0.00000000" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="30202">
-				<waveblock start="0">
-					<simpleblockfile filename="e0808047.au" len="30202" min="-0.080269" max="0.083243" rms="0.026238"/>
-				</waveblock>
-			</sequence>
-			<envelope numpoints="0"/>
-		</waveclip>
-	</wavetrack>
 	<wavetrack name="2022-07-20 00-17-20" isSelected="1" height="150" minimized="0" channel="2" linked="0" mute="0" solo="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="30130">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808515.au" len="30130" min="-0.084103" max="0.084516" rms="0.027563"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="2022-07-20 00-17-20" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="30209">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808355.au" len="30209" min="-0.075881" max="0.076244" rms="0.02511"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="2022-07-20 00-17-20" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
 		<waveclip offset="0.00000000" colorindex="0">
 			<sequence maxsamples="262144" sampleformat="262159" numsamples="30203">
 				<waveblock start="0">
-					<simpleblockfile filename="e0808780.au" len="30203" min="-0.076914" max="0.07628" rms="0.02479"/>
+					<simpleblockfile filename="e0808372.au" len="30203" min="-0.073994" max="0.073313" rms="0.024884"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="2022-07-20 00-17-20" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="30203">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a86.au" len="30203" min="-0.067762" max="0.067363" rms="0.023615"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="2022-07-20 00-17-20" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="30205">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808ef6.au" len="30205" min="-0.067781" max="0.065508" rms="0.023409"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="2022-07-20 00-17-20" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="30205">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808cd8.au" len="30205" min="-0.058568" max="0.05814" rms="0.022952"/>
 				</waveblock>
 			</sequence>
 			<envelope numpoints="0"/>

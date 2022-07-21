@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class Save : MonoBehaviour {
 
+    public static Save instance {get; private set;}
     const string HIGHSCORE_KEY = "Highscore";
 
     public int highscore {get; set;}
     public bool sound {get; set;}
 
     void Awake() {
+        if (instance is not null && instance != this) {
+            Destroy(gameObject);
+        } else {
+            instance = this;
+        }
+
         DontDestroyOnLoad(gameObject);
         sound = true;
     }
