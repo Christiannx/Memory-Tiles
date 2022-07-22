@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -110,6 +111,9 @@ public class UIManager : MonoBehaviour {
     }
 
     public void DontDestroy(GameObject parent) {
+        GameObject[] objectsToDestroy = GameObject.FindGameObjectsWithTag("DestroyOnLoad");
+        Array.ForEach(objectsToDestroy, elem => Destroy(elem.gameObject));
+ 
         DontDestroyOnLoad(parent);
         Destroy(parent, 1);
         HidePauseMenu();
