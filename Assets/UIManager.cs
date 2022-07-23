@@ -12,14 +12,14 @@ public class UIManager : MonoBehaviour {
     [SerializeField] TextMeshProUGUI hintsLabel;
     [SerializeField] Animator darkPanel;
     [SerializeField] Animator hintWindow;
-    [SerializeField] Button hintButton;
+    [SerializeField] HintButtonRewardedAds hintButtonRewardedAds;
     [SerializeField] Animator pauseMenu;
     [SerializeField] TextMeshProUGUI pauseLevelLabel;
     [SerializeField] TextMeshProUGUI pauseHeartsLabel;
     [SerializeField] TextMeshProUGUI gameOverLevelLabel;
     [SerializeField] Animator gameOverMenu;
-    [SerializeField] Button extraHeartsButtonGameOver;
-    [SerializeField] Button extraHeartsButtonPause;
+    [SerializeField] ExtraHeartButtonRewardedAds extraHeartsButtonGameOver;
+    [SerializeField] ExtraHeartButtonRewardedAds extraHeartsButtonPause;
 
     GameManager gameManager;
     bool canGetHint = true;
@@ -56,7 +56,7 @@ public class UIManager : MonoBehaviour {
     public void FinishLevel() {
         nextButton.GetComponent<Animator>().ResetTrigger("NextLevel");
         nextButton.GetComponent<Animator>().SetTrigger("Appear");
-        hintButton.interactable = false;
+        hintButtonRewardedAds.SetInteractable(false);
     }
 
     public void ShowHintWindow() => ShowMenu(hintWindow);
@@ -83,7 +83,7 @@ public class UIManager : MonoBehaviour {
 
     public void HintButtonInteractable(bool b) {
         if (canGetHint) {
-            hintButton.interactable = b;
+            hintButtonRewardedAds.SetInteractable(b);
         }
     }
 
@@ -96,12 +96,12 @@ public class UIManager : MonoBehaviour {
     }
 
     public void DisableExtraHearts() {
-        extraHeartsButtonGameOver.interactable = false;
-        extraHeartsButtonPause.interactable = false;
+        extraHeartsButtonGameOver.permanentlyDisabled = true;
+        extraHeartsButtonPause.permanentlyDisabled = true;
     }
 
     public void DisableHints() {
-        hintButton.interactable = false;
+        hintButtonRewardedAds.permanentlyDisabled = true;
         canGetHint = false;
     }
 

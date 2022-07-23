@@ -231,7 +231,7 @@ public class GameManager : MonoBehaviour {
         inputEnabled = true;
     }
 
-    public void ShowHintButton() {
+    public void HintRewarded() {
         ui.HideHintWindow();
         hintCounter ++;
         ui.UpdateHints(hintCounter);
