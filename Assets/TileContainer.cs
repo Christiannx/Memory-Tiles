@@ -14,7 +14,7 @@ public class TileContainer : MonoBehaviour {
     }
 
     void Start() {
-        float scale = GetComponentInChildren<SpriteRenderer>().transform.localScale.x;
+        float scale = GetComponentInChildren<SpriteRenderer>().transform.localScale.x - 0.05f;
         corners[0] = Instantiate(
             cornerPrefab,
             new Vector2(-(scale / 2), scale / 2),

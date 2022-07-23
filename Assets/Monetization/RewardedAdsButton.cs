@@ -33,7 +33,7 @@ public abstract class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, 
     void Start() {
         save = FindObjectOfType<Save>();
         save.LoadData();
-        
+
         if (!save.removedAds) {
             LoadAd();
         } else {
@@ -45,6 +45,7 @@ public abstract class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, 
 
     public void OnUnityAdsAdLoaded(string adUnityID) {
         if (adUnitID.Equals(this.adUnitID)) {
+            button.onClick.RemoveListener(ShowAd);
             button.onClick.AddListener(ShowAd);
             SetInteractable(true);
         }
@@ -58,7 +59,7 @@ public abstract class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, 
     public void OnUnityAdsShowComplete(string adUnitID, UnityAdsShowCompletionState showCompletionState) {
         if (adUnitID.Equals(this.adUnitID) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED)) {
             GrantReward();
-
+            Debug.Log("Grant Reward called");
             Advertisement.Load(adUnitID, this);
         }
     }

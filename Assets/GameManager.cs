@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour {
             }
         }
 
-        float tileScale = container.width / amount - 0.1f;
+        float tileScale = container.width / amount - 0.05f;
         float offset = container.width / 2;
 
         tilesTemp = new List<Tile>();
@@ -235,12 +235,13 @@ public class GameManager : MonoBehaviour {
         ui.HideHintWindow();
         hintCounter ++;
         ui.UpdateHints(hintCounter);
-        if (hintCounter > 2) {
-            ui.DisableHints();
-            return;
-        }
 
-        Invoke(nameof(ShowHintWrapper), 0.2f);
+        if (hintCounter < 3) {
+            Invoke(nameof(ShowHintWrapper), 0.2f);
+        } else if (hintCounter >= 3 ) {
+            Invoke(nameof(ShowHintWrapper), 0.2f);
+            ui.DisableHints();
+        }
     }
     
     void ShowHintWrapper() => ShowHint(currentIndexInSequence, 2);
@@ -259,7 +260,7 @@ public class GameManager : MonoBehaviour {
             17 or 18 => (5, 6),
             19 or 20 => (6, 4),
             21 or 22 => (6, 5),
-            _        => (6, 6 )
+            _        => (6, 6)
         };
     }
 
