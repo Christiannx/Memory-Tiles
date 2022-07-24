@@ -172,6 +172,7 @@ public class GameManager : MonoBehaviour {
                 sound.Valid(tile.sequence, numberOfTiles);
         } else {
             tile.Trigger(Invalid);
+            sound.Valid(currentIndexInSequence - 1, numberOfTiles);
 
             lives -= 1;
             ui.DecreaseHearts(lives);

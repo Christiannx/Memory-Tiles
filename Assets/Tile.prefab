@@ -489,7 +489,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b176bba78eea61f4bb8d702fa6e609d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationClipValidPath: Assets/Animation/Valid.anim
+  x: 0
+  y: 0
+  finishAnimationPlayed: 0
   indexLabel: {fileID: 7388829396586345324}
   indexAnimator: {fileID: 5909450356849530561}
 --- !u!61 &5646054541213608402
