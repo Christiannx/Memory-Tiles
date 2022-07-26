@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Purchasing;
 
 using TMPro;
 
@@ -16,8 +17,10 @@ public class MainMenuManager : MonoBehaviour {
     [SerializeField] TextMeshProUGUI highscoreLabel;
     [SerializeField] Toggle soundToggle;
     [SerializeField] AudioClip[] playAudios;
+    [SerializeField] Button removeAdsButton;
 
     AudioSource click;
+    Save save;
     [HideInInspector] public bool playAnimationDone;
 
     void Awake() {
@@ -27,7 +30,7 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     void Start() {
-        var save = FindObjectOfType<Save>();
+        save = FindObjectOfType<Save>();
 
         save.LoadData();
         if (save.highscore != 0) {
@@ -37,6 +40,9 @@ public class MainMenuManager : MonoBehaviour {
         }
 
         soundToggle.isOn = save.sound;
+
+        if (save.removedAds)
+            DisableRemoveAdsButton();
     }
 
     public void Play() {
@@ -117,4 +123,11 @@ public class MainMenuManager : MonoBehaviour {
             yield return null;
         }
     }
+
+    public void DisableRemoveAdsButton() {
+        Destroy(removeAdsButton.GetComponent<IAPButton>());
+        removeAdsButton.onClick.AddListener(AddToastListenerWrapper);
+    }
+
+    void AddToastListenerWrapper() => Android.ShowAndroidToastMessage("You already purchased this");
 }

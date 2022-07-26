@@ -182,7 +182,7 @@ public class GameManager : MonoBehaviour {
             } else {
                 inputEnabled = false;
                 ShowHint(currentIndexInSequence, 2);
-                Invoke(nameof(GameOverMenuWrapper), 0.5f);
+                Invoke(nameof(GameOverMenuWrapper), 0.5f);  
                 
                 save.LoadData();
                 var highscore = save.highscore;
@@ -319,7 +319,7 @@ public class GameManager : MonoBehaviour {
     public void GetExtraHeart() {
         if (lives >= 3) {
             if (Application.platform == RuntimePlatform.Android)
-                _ShowAndroidToastMessage("You already have 3 lives");
+                Android.ShowAndroidToastMessage("You already have 3 lives");
             return;
         }
 
@@ -334,18 +334,5 @@ public class GameManager : MonoBehaviour {
         ui.HidePauseMenu();
         ui.HideGameOverMenu();
         ShowHint(currentIndexInSequence, 2);
-    }
-
-    private void _ShowAndroidToastMessage(string message) {
-        AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        AndroidJavaObject unityActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-
-        if (unityActivity != null) {
-            AndroidJavaClass toastClass = new AndroidJavaClass("android.widget.Toast");
-            unityActivity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
-                AndroidJavaObject toastObject = toastClass.CallStatic<AndroidJavaObject>("makeText", unityActivity, message, 0);
-                toastObject.Call("show");
-            }));
-        }
     }
 }

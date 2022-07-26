@@ -22,6 +22,8 @@ public class Save : MonoBehaviour {
         sound = true;
     }
 
+    void Start() => LoadData();
+
     public void SaveData() {
         PlayerPrefs.SetInt(HIGHSCORE_KEY, highscore);
         PlayerPrefs.SetInt(REMOVED_ADS_KEY, removedAds? 1 : 0);
@@ -32,7 +34,7 @@ public class Save : MonoBehaviour {
         if (PlayerPrefs.HasKey(HIGHSCORE_KEY)) 
             highscore = PlayerPrefs.GetInt(HIGHSCORE_KEY);
         if (PlayerPrefs.HasKey(REMOVED_ADS_KEY))
-            removedAds = PlayerPrefs.GetInt(HIGHSCORE_KEY) == 1;
+            removedAds = PlayerPrefs.GetInt(REMOVED_ADS_KEY) == 1;
     }
 
     public void ResetData() {

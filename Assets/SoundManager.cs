@@ -31,7 +31,7 @@ public class SoundManager : MonoBehaviour {
     public void Valid(int index, int numberOfTiles) {
         if (!save.sound) return;
 
-        var clipsInOrder = GetAudioClipsInOrder(numberOfTiles - 1);
+        var clipsInOrder = GetAudioClipsInOrder(numberOfTiles);
         audioSource.PlayOneShot(clipsInOrder[index]);
     }
 

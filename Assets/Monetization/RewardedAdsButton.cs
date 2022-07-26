@@ -35,6 +35,7 @@ public abstract class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, 
         save.LoadData();
 
         if (!save.removedAds) {
+            Debug.Log($"Ad loaded ({save.removedAds})");
             LoadAd();
         } else {
             button.onClick.AddListener(GrantReward);
