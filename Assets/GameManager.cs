@@ -192,7 +192,8 @@ public class GameManager : MonoBehaviour {
                 ShowHint(currentIndexInSequence, 2);
             } else {
                 inputEnabled = false;
-                ShowHint(currentIndexInSequence, 2);
+                var remainingTiles = numberOfSequencedTiles - currentIndexInSequence + 1;
+                ShowHint(currentIndexInSequence, remainingTiles);
                 Invoke(nameof(GameOverMenuWrapper), 0.5f);  
                 
                 save.LoadData();
