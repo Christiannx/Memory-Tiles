@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour {
     [SerializeField] Animator gameOverMenu;
     [SerializeField] ExtraHeartButtonRewardedAds extraHeartsButtonGameOver;
     [SerializeField] ExtraHeartButtonRewardedAds extraHeartsButtonPause;
+    [SerializeField] TextMeshProUGUI tutorialLabel;
 
     GameManager gameManager;
     bool canGetHint = true;
@@ -118,5 +119,10 @@ public class UIManager : MonoBehaviour {
         Destroy(parent, 1);
         HidePauseMenu();
         HideGameOverMenu();
+    }
+
+    public void ShowTutorialText(string message) {
+        tutorialLabel.text = message;
+        tutorialLabel.GetComponent<Animator>().Play("Tutorial Text Appear");
     }
 }

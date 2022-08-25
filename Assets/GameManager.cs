@@ -145,6 +145,11 @@ public class GameManager : MonoBehaviour {
         inputEnabled = false;
         ui.HintButtonInteractable(false);
 
+        save.LoadData();
+        if (!save.tutorialShown) {
+            ui.ShowTutorialText("Remember the sequence...");
+        }
+
         foreach (var tile in tilesInSequence) {
             yield return new WaitForSeconds(previewDelay);
 
@@ -157,6 +162,12 @@ public class GameManager : MonoBehaviour {
             }
             else 
                 break;
+        }
+
+        if (!save.tutorialShown) {
+            ui.ShowTutorialText("Tap the tiles in the correct order!");
+            save.tutorialShown = true;
+            save.SaveData();
         }
 
         inputEnabled = true;

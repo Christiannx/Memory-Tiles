@@ -6,10 +6,12 @@ public class Save : MonoBehaviour {
 
     const string HIGHSCORE_KEY = "Highscore";
     const string REMOVED_ADS_KEY = "Removed_Ads";
+    const string TUTORIAL_SHOWN_KEY = "Tutorial_Shown";
 
     public int highscore {get; set;}
     public bool sound {get; set;}
     public bool removedAds {get; set;}
+    public bool tutorialShown {get; set;}
 
     void Awake() {
         if (instance is not null && instance != this) {
@@ -20,6 +22,7 @@ public class Save : MonoBehaviour {
 
         DontDestroyOnLoad(gameObject);
         sound = true;
+        tutorialShown = false;
     }
 
     void Start() => LoadData();
@@ -27,6 +30,7 @@ public class Save : MonoBehaviour {
     public void SaveData() {
         PlayerPrefs.SetInt(HIGHSCORE_KEY, highscore);
         PlayerPrefs.SetInt(REMOVED_ADS_KEY, removedAds? 1 : 0);
+        PlayerPrefs.SetInt(TUTORIAL_SHOWN_KEY, tutorialShown? 1 : 0);
         PlayerPrefs.Save();
     }
     
@@ -35,6 +39,8 @@ public class Save : MonoBehaviour {
             highscore = PlayerPrefs.GetInt(HIGHSCORE_KEY);
         if (PlayerPrefs.HasKey(REMOVED_ADS_KEY))
             removedAds = PlayerPrefs.GetInt(REMOVED_ADS_KEY) == 1;
+        if (PlayerPrefs.HasKey(TUTORIAL_SHOWN_KEY))
+            tutorialShown = PlayerPrefs.GetInt(TUTORIAL_SHOWN_KEY) == 1;
     }
 
     public void ResetData() {
