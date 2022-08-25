@@ -1,3 +1,5 @@
+using System.IO;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour {
     SoundManager sound;
     List<Tile> tilesTemp;
     List<Tile> tilesInSequence;
+    IDictionary<int, (int, int)> difficulty;
     bool inputEnabled = false;
     int currentIndexInSequence = 0;
     int lives = 3;
@@ -31,9 +34,11 @@ public class GameManager : MonoBehaviour {
         ui = FindObjectOfType<UIManager>();
         save = FindObjectOfType<Save>();
         sound = FindObjectOfType<SoundManager>();
+        difficulty = new Dictionary<int, (int, int)>();
     }
 
     void Start() {
+        LoadDifficultyConfig();
         Invoke(nameof(NextLevel), 0.1f);
     }
 
@@ -73,7 +78,11 @@ public class GameManager : MonoBehaviour {
     public void NextLevel() => StartCoroutine(NextLevelCoroutine());
 
     IEnumerator NextLevelCoroutine() {
-        (numberOfTiles, numberOfSequencedTiles) = DifficultyConfig(levelProgression);
+        try {
+            (numberOfTiles, numberOfSequencedTiles) = difficulty[levelProgression];
+        } catch {
+            (numberOfTiles, numberOfSequencedTiles) = difficulty.Values.Last();
+        }
 
         ClearLevel();
         if (levelProgression > 1)
@@ -259,24 +268,6 @@ public class GameManager : MonoBehaviour {
     }
     
     void ShowHintWrapper() => ShowHint(currentIndexInSequence, 2);
-    
-    static (int, int) DifficultyConfig(int level) {
-        return level switch {
-            1        => (2, 4),
-            2 or 3   => (3, 4),
-            4 or 5   => (3, 5),
-            6 or 7   => (3, 6),
-            8 or 9   => (4, 4),
-            10 or 11 => (4, 5),
-            11 or 12 => (4, 6),
-            13 or 14 => (5, 4),
-            15 or 16 => (5, 5),
-            17 or 18 => (5, 6),
-            19 or 20 => (6, 4),
-            21 or 22 => (6, 5),
-            _        => (6, 6)
-        };
-    }
 
     List<List<Tile>> GenerateFinishingSequence(Tile startingTile) {
         var tilesInOrder = new List<List<Tile>>();
@@ -347,5 +338,30 @@ public class GameManager : MonoBehaviour {
         ui.HidePauseMenu();
         ui.HideGameOverMenu();
         ShowHint(currentIndexInSequence, 2);
+    }
+
+    void LoadDifficultyConfig() {
+        using (var reader = new StreamReader(Application.dataPath + "/Resources/difficulty.csv")) {
+            while (!reader.EndOfStream) {
+                string line = reader.ReadLine();
+                string[] valuesStr = line.Split(";");
+
+                var values = new List<int>();
+                foreach(var v in valuesStr) {
+                    try {
+                        values.Add(int.Parse(v));
+                    } catch {
+                        Debug.Log("difficulty.csv contains invalid data: " + v);
+                    }
+                }
+
+                try {
+                    difficulty.Add(values[0], (values[1], values[2]));
+                } catch (System.ArgumentOutOfRangeException) {
+                    Debug.Log("values does not have 3 values");
+                    values.ForEach(x => Debug.Log(x));
+                }
+            }
+        }
     }
 }
