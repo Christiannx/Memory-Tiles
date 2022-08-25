@@ -183,7 +183,7 @@ public class GameManager : MonoBehaviour {
                 sound.Valid(tile.sequence, numberOfTiles);
         } else {
             tile.Trigger(Invalid);
-            sound.Valid(currentIndexInSequence - 1, numberOfTiles);
+            sound.Error();
 
             lives -= 1;
             ui.DecreaseHearts(lives);
@@ -204,6 +204,7 @@ public class GameManager : MonoBehaviour {
             }
         }
 
+        // Finish level
         if (currentIndexInSequence == numberOfSequencedTiles) {
             levelProgression ++;
             inputEnabled = false;

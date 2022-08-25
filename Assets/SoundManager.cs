@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour {
     [SerializeField] AudioClip click;
     [SerializeField] AudioClip[] validAudioClips;
     [SerializeField] AudioClip[] previewClips;
+    [SerializeField] AudioClip errorClip;
 
     AudioSource audioSource;
     Save save;
@@ -33,6 +34,12 @@ public class SoundManager : MonoBehaviour {
 
         var clipsInOrder = GetAudioClipsInOrder(numberOfTiles);
         audioSource.PlayOneShot(clipsInOrder[index]);
+    }
+
+    public void Error() {
+        if (!save.sound) return;
+
+        audioSource.PlayOneShot(errorClip);
     }
 
     public void FinishSound(int lastIndex) => StartCoroutine(FinishSoundCoroutine(lastIndex));

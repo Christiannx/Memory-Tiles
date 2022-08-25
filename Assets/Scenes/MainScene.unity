@@ -2030,6 +2030,7 @@ MonoBehaviour:
   previewClips:
   - {fileID: 8300000, guid: 4982debf701a29e45abcd7130c45258b, type: 3}
   - {fileID: 8300000, guid: 2ca7b17a2956c7841b7b8a5697234e08, type: 3}
+  errorClip: {fileID: 8300000, guid: 1e07fed3f7a283742bd143c35be995b4, type: 3}
 --- !u!1 &607424588
 GameObject:
   m_ObjectHideFlags: 0
