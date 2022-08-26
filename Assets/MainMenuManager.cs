@@ -125,9 +125,9 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     public void DisableRemoveAdsButton() {
-        Destroy(removeAdsButton.GetComponent<IAPButton>());
-        removeAdsButton.onClick.AddListener(AddToastListenerWrapper);
+        removeAdsButton.onClick.AddListener(() => {
+            CrossPlatform.ShowMessage("You already purchased this");
+        });
+        Destroy(removeAdsButton.GetComponent<IAPButton>(), 0.1f);
     }
-
-    void AddToastListenerWrapper() => Android.ShowAndroidToastMessage("You already purchased this");
 }

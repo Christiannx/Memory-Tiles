@@ -2480,7 +2480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86de230b368dd341aa4a1ac3c9d5520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintbutton: {fileID: 0}
+  hintbuttonLabel: {fileID: 1776539998}
 --- !u!4 &857741653
 Transform:
   m_ObjectHideFlags: 0

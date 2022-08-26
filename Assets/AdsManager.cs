@@ -3,7 +3,7 @@ using TMPro;
 
 public class AdsManager : MonoBehaviour {
 
-    [SerializeField] TextMeshProUGUI hintbutton;
+    [SerializeField] TextMeshProUGUI hintbuttonLabel;
 
     Save save;
 
@@ -13,7 +13,7 @@ public class AdsManager : MonoBehaviour {
 
     void Start() {
         if (save.removedAds) {
-            hintbutton.text = "Free";
+            hintbuttonLabel.text = "Free";
         }
     }
 }

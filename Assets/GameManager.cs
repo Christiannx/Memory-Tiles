@@ -322,8 +322,7 @@ public class GameManager : MonoBehaviour {
 
     public void GetExtraHeart() {
         if (lives >= 3) {
-            if (Application.platform == RuntimePlatform.Android)
-                Android.ShowAndroidToastMessage("You already have 3 lives");
+            CrossPlatform.ShowMessage("You already have 3 lives");
             return;
         }
 
