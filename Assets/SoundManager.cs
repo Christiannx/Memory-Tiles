@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public class SoundManager : MonoBehaviour {
 
@@ -16,7 +17,6 @@ public class SoundManager : MonoBehaviour {
     void Awake() {
         audioSource = GetComponent<AudioSource>();
         save = FindObjectOfType<Save>();
-        
     }
 
     public void Click() {
@@ -29,10 +29,14 @@ public class SoundManager : MonoBehaviour {
         audioSource.PlayOneShot(previewClips[lastOne? 0 : 1], 0.7f);
     }
 
-    public void Valid(int index, int numberOfTiles) {
+    public void Valid(int index, int sequenceLength) {
         if (!save.sound) return;
 
-        var clipsInOrder = GetAudioClipsInOrder(numberOfTiles);
+        var clipsInOrder = GetAudioClipsInOrder(sequenceLength);
+        while (index >= clipsInOrder.Count) {
+            index -= clipsInOrder.Count;
+            Debug.Log(index);
+        }
         audioSource.PlayOneShot(clipsInOrder[index]);
     }
 
@@ -49,7 +53,9 @@ public class SoundManager : MonoBehaviour {
         
         var clipsInOrder = GetAudioClipsInOrder(lastIndex);
         for (int i = 0; i <= lastIndex; i++) {
-            audioSource.PlayOneShot(clipsInOrder[i]);
+            if (i < clipsInOrder.Count) {
+                audioSource.PlayOneShot(clipsInOrder[i]);
+            }
             yield return new WaitForSeconds(finishSoundDelay);
         }
     }
@@ -59,7 +65,7 @@ public class SoundManager : MonoBehaviour {
 
         if (lastIndex <= 4)
             return clipsInOrder;
-        else if (lastIndex == 5) {
+        else if (lastIndex >= 5) {
             clipsInOrder[4] = validAudioClips[5];
             clipsInOrder[5] = validAudioClips[4];
         }

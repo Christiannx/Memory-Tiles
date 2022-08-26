@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour {
     int lives = 3;
     int extraLivesCounter = 0;
     int hintCounter = 0;
-    int levelProgression = 1;
+    [SerializeField] int levelProgression = 1;
     int numberOfTiles;
     int numberOfSequencedTiles;
 
@@ -189,7 +189,7 @@ public class GameManager : MonoBehaviour {
             currentIndexInSequence++;
 
             if (currentIndexInSequence != numberOfSequencedTiles)
-                sound.Valid(tile.sequence, numberOfTiles);
+                sound.Valid(tile.sequence, numberOfSequencedTiles);
         } else {
             tile.Trigger(Invalid);
             sound.Error();

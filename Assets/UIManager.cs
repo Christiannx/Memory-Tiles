@@ -21,12 +21,15 @@ public class UIManager : MonoBehaviour {
     [SerializeField] ExtraHeartButtonRewardedAds extraHeartsButtonGameOver;
     [SerializeField] ExtraHeartButtonRewardedAds extraHeartsButtonPause;
     [SerializeField] TextMeshProUGUI tutorialLabel;
+    [SerializeField] Image highscoreImage;
 
     GameManager gameManager;
+    Save save;
     bool canGetHint = true;
 
     void Awake() {
         gameManager = FindObjectOfType<GameManager>();
+        save = FindObjectOfType<Save>();
     }
 
     public void DecreaseHearts(int lives) {
@@ -52,6 +55,8 @@ public class UIManager : MonoBehaviour {
         levelLabel.text = "Level " + level;
         pauseLevelLabel.text = "Level " + level;
         gameOverLevelLabel.text = "You reached level " + level;
+
+        highscoreImage.gameObject.SetActive(save.highscore <= level && save.highscore != 0);
     }
 
     public void FinishLevel() {
