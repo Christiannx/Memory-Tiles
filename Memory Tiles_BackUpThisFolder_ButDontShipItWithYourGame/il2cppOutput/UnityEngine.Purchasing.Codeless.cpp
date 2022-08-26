@@ -57,12 +57,18 @@ struct InterfaceFuncInvoker0
 
 // System.Action`1<System.Boolean>
 struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C;
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 // System.Collections.Generic.Dictionary`2<UnityEngine.Purchasing.AppStore,System.String>
 struct Dictionary_2_t74667C424CDD2B5DB81CEC61E57169FA17BCF782;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.Tasks.Task>
+struct Dictionary_2_t403063CE4960B4F46C688912237C6A27E550FF55;
 // System.Collections.Generic.Dictionary`2<System.String,UnityEngine.Purchasing.Product>
 struct Dictionary_2_tA68216B8C589E227DC058B5D6C083EA10CFF7064;
 // System.Collections.Generic.Dictionary`2<System.String,System.String>
 struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83;
+// System.Func`1<System.Threading.Tasks.Task/ContingentProperties>
+struct Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1;
 // System.Collections.Generic.HashSet`1<UnityEngine.Purchasing.Product>
 struct HashSet_1_t609586F7A2EB402C5AA35903DB236CD264F2D707;
 // System.Collections.Generic.HashSet`1<UnityEngine.Purchasing.ProductDefinition>
@@ -93,6 +99,10 @@ struct List_1_tF9E4155F905E46DBB10A4779C193F32620147794;
 struct List_1_t48BDDF48EBA5EFE2DF289544A05B3FA63F1C6DA5;
 // System.Collections.Generic.List`1<UnityEngine.Purchasing.StoreID>
 struct List_1_t86E14981FC609E067B0863BFFD976BE10F7D760C;
+// System.Predicate`1<System.Object>
+struct Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12;
+// System.Predicate`1<System.Threading.Tasks.Task>
+struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
 // UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
 struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
 // UnityEngine.Events.UnityEvent`1<System.Object>
@@ -113,6 +123,8 @@ struct IAPButtonU5BU5D_t03C185F98123D7772864156EDF7618C84407126E;
 struct IAPListenerU5BU5D_t424DB96D728C3038730383F1040BF052680B8386;
 // UnityEngine.Purchasing.Extension.IPurchasingModule[]
 struct IPurchasingModuleU5BU5D_t22376E8A94924F3A1ABB5C37A4D985015234036A;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 // UnityEngine.Purchasing.PayoutDefinition[]
@@ -125,6 +137,8 @@ struct ProductCatalogItemU5BU5D_t736755D87F8B9CBBE84DB1DA5DB0B1F2AF1E287E;
 struct ProductCatalogPayoutU5BU5D_t65D026A82C5AD54BDC42B986AE3A7E54F7FFB21A;
 // UnityEngine.UI.Selectable[]
 struct SelectableU5BU5D_t4160E135F02A40F75A63F787D36F31FEC6FE91A9;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // UnityEngine.Purchasing.StoreID[]
 struct StoreIDU5BU5D_tC0768CECF1E1B2F0D1C15644CF45911814D13085;
 // System.String[]
@@ -135,6 +149,8 @@ struct UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F;
 struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 // UnityEngine.Vector3[]
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 // UnityEngine.UI.AnimationTriggers
 struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
 // UnityEngine.UI.Button
@@ -149,10 +165,16 @@ struct CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // UnityEngine.Purchasing.ConfigurationBuilder
 struct ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D;
+// System.Threading.ContextCallback
+struct ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007;
+// System.Delegate
+struct Delegate_t;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
 // System.Enum
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
+// System.Exception
+struct Exception_t;
 // UnityEngine.UI.FontData
 struct FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224;
 // UnityEngine.GameObject
@@ -165,6 +187,10 @@ struct IAPButton_t2055E62C16E5E1C4DA5790700F4BD6DC8F3A6AB8;
 struct IAPListener_t03EC13DC1694B8AD722FAFC7B9D0E41673AA7C16;
 // UnityEngine.Purchasing.IAppleExtensions
 struct IAppleExtensions_t41229C4C01DD93794E730B8AFB9EEEBEC33C0238;
+// System.Runtime.CompilerServices.IAsyncStateMachine
+struct IAsyncStateMachine_t0680C7F905C553076B552D5A1A6E39E2F0F36AA2;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 // UnityEngine.Purchasing.IDs
 struct IDs_tE35195DC62A54F327C2E33D7B285CC8D4A869316;
 // UnityEngine.Purchasing.IExtensionProvider
@@ -187,6 +213,10 @@ struct IPurchasingModule_t60E830BBA4F2DF8765D08BA4CE5A6E004D0DDAE7;
 struct IStoreController_tA7C537E1DC9AA11A82CBD2DD131B6552064AD667;
 // UnityEngine.Purchasing.IStoreListener
 struct IStoreListener_t989A5D55525E5BD7994ACC2506C5ADFB3F097A7D;
+// UnityEngine.Purchasing.Telemetry.ITelemetryDiagnosticsInstanceWrapper
+struct ITelemetryDiagnosticsInstanceWrapper_tE9C80569B5FADDB74AC6BA62B240969EEC271D78;
+// UnityEngine.Purchasing.Telemetry.ITelemetryMetricsInstanceWrapper
+struct ITelemetryMetricsInstanceWrapper_tCE178641236A54365C7446885E9FE7A0B95F9EDD;
 // Uniject.IUtil
 struct IUtil_t327ADFE6C21617B1816AE9E50328D727DB2EF02A;
 // UnityEngine.Events.InvokableCallList
@@ -231,14 +261,26 @@ struct PurchasingFactory_tC87E368967334D76A150DEE74D0DDFEB9A502935;
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 // UnityEngine.RectTransform
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 // UnityEngine.UI.Selectable
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
 // UnityEngine.Sprite
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+// System.Threading.Tasks.StackGuard
+struct StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352;
 // UnityEngine.Purchasing.StandardPurchasingModule
 struct StandardPurchasingModule_t988B3F7D9F73F5C6458E0DBB35AC92CDD3DA2489;
 // System.String
 struct String_t;
+// System.Threading.SynchronizationContext
+struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0;
+// System.Threading.Tasks.Task
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572;
+// System.Threading.Tasks.TaskFactory
+struct TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0;
+// System.Threading.Tasks.TaskScheduler
+struct TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E;
 // UnityEngine.UI.Text
 struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62;
 // UnityEngine.TextGenerator
@@ -269,10 +311,13 @@ struct OnPurchaseFailedEvent_t2AE278DD03F5A737F83AEC56260D3387AA4B89D1;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 // UnityEngine.Purchasing.StandardPurchasingModule/StoreInstance
 struct StoreInstance_tE334F08374C14889F3118AFD0E1F280950C138D6;
+// System.Threading.Tasks.Task/ContingentProperties
+struct ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540;
 
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IAppleExtensions_t41229C4C01DD93794E730B8AFB9EEEBEC33C0238_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ICollection_1_t6F6F2A13A5D5A3DFFC0FF7ECC6911440818763F2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
@@ -296,6 +341,7 @@ IL2CPP_EXTERN_C RuntimeClass* PayoutDefinition_t7093E2ED065CDF614DA16100B584AD49
 IL2CPP_EXTERN_C RuntimeClass* RuntimePlatform_t9A8AAF204603076FCAAECCCC05DA386AEE7BF66E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StandardPurchasingModule_t988B3F7D9F73F5C6458E0DBB35AC92CDD3DA2489_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral1EF35329A9C666A6162702EC4141FF8A8DCCD553;
 IL2CPP_EXTERN_C String_t* _stringLiteral4F5969530815E6A540A3ECE75D68272FE8482067;
@@ -309,6 +355,8 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB1E7A3FB4D90EDF8B2F2EA0B4348061782111095
 IL2CPP_EXTERN_C String_t* _stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677;
 IL2CPP_EXTERN_C String_t* _stringLiteralF5A61BB4FAA639A1E99385D655E6B58C0195FB0A;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisIPurchasingModule_t60E830BBA4F2DF8765D08BA4CE5A6E004D0DDAE7_m25AB0A37E084D175E7F351C61AEA6063A156A69F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m2D17DA0F4C5D0E8035DBA3AFF2E4CD4728BD1286_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m24A0E6D20988F35E631F653D2F454DE416651718_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CodelessIAPStoreListener_GetStoreExtensions_TisIAppleExtensions_t41229C4C01DD93794E730B8AFB9EEEBEC33C0238_mE6AFB5675C0006FD9A9BF845DE9472129C353B48_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CodelessIAPStoreListener_GetStoreExtensions_TisIGooglePlayStoreExtensions_t5C73808BD965EB1E0F9F58213D11A16D0ACD2C61_m91B7FA730E50D6F5D2C16D475E9A7FF13EF81BEE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CodelessIAPStoreListener_GetStoreExtensions_TisIMicrosoftExtensions_t58C55ED3EE8548425A77EB9EFC4AB9AE26523820_m5275FD40FCF05F2ABCEC70990F738F9512E3E700_RuntimeMethod_var;
@@ -339,6 +387,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_2_Invoke_m6AE411932003550130B01D
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_2__ctor_m40A605F14C3DC31CA6795C04E5B7373496F4C2F2_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
 
 struct IPurchasingModuleU5BU5D_t22376E8A94924F3A1ABB5C37A4D985015234036A;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
@@ -598,8 +648,10 @@ struct ProductCatalog_t6F6B11865D55D089683F954BB3B223C00B33F8E1  : public Runtim
 	String_t* ___appleTeamID_2;
 	// System.Boolean UnityEngine.Purchasing.ProductCatalog::enableCodelessAutoInitialization
 	bool ___enableCodelessAutoInitialization_3;
+	// System.Boolean UnityEngine.Purchasing.ProductCatalog::enableUnityGamingServicesAutoInitialization
+	bool ___enableUnityGamingServicesAutoInitialization_4;
 	// System.Collections.Generic.List`1<UnityEngine.Purchasing.ProductCatalogItem> UnityEngine.Purchasing.ProductCatalog::products
-	List_1_tF9E4155F905E46DBB10A4779C193F32620147794* ___products_4;
+	List_1_tF9E4155F905E46DBB10A4779C193F32620147794* ___products_5;
 };
 
 struct ProductCatalog_t6F6B11865D55D089683F954BB3B223C00B33F8E1_StaticFields
@@ -707,6 +759,63 @@ struct String_t_StaticFields
 	String_t* ___Empty_6;
 };
 
+// System.Threading.Tasks.Task
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572  : public RuntimeObject
+{
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_taskId
+	int32_t ___m_taskId_1;
+	// System.Delegate System.Threading.Tasks.Task::m_action
+	Delegate_t* ___m_action_2;
+	// System.Object System.Threading.Tasks.Task::m_stateObject
+	RuntimeObject* ___m_stateObject_3;
+	// System.Threading.Tasks.TaskScheduler System.Threading.Tasks.Task::m_taskScheduler
+	TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E* ___m_taskScheduler_4;
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::m_parent
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_parent_5;
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_stateFlags
+	int32_t ___m_stateFlags_6;
+	// System.Object modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_continuationObject
+	RuntimeObject* ___m_continuationObject_7;
+	// System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_contingentProperties
+	ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540* ___m_contingentProperties_10;
+};
+
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_StaticFields
+{
+	// System.Int32 System.Threading.Tasks.Task::s_taskIdCounter
+	int32_t ___s_taskIdCounter_0;
+	// System.Object System.Threading.Tasks.Task::s_taskCompletionSentinel
+	RuntimeObject* ___s_taskCompletionSentinel_8;
+	// System.Boolean System.Threading.Tasks.Task::s_asyncDebuggingEnabled
+	bool ___s_asyncDebuggingEnabled_9;
+	// System.Action`1<System.Object> System.Threading.Tasks.Task::s_taskCancelCallback
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___s_taskCancelCallback_11;
+	// System.Func`1<System.Threading.Tasks.Task/ContingentProperties> System.Threading.Tasks.Task::s_createContingentProperties
+	Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1* ___s_createContingentProperties_14;
+	// System.Threading.Tasks.TaskFactory System.Threading.Tasks.Task::<Factory>k__BackingField
+	TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0* ___U3CFactoryU3Ek__BackingField_15;
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::<CompletedTask>k__BackingField
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___U3CCompletedTaskU3Ek__BackingField_16;
+	// System.Predicate`1<System.Threading.Tasks.Task> System.Threading.Tasks.Task::s_IsExceptionObservedByParentPredicate
+	Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED* ___s_IsExceptionObservedByParentPredicate_17;
+	// System.Threading.ContextCallback System.Threading.Tasks.Task::s_ecCallback
+	ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007* ___s_ecCallback_18;
+	// System.Predicate`1<System.Object> System.Threading.Tasks.Task::s_IsTaskContinuationNullPredicate
+	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___s_IsTaskContinuationNullPredicate_19;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.Tasks.Task> System.Threading.Tasks.Task::s_currentActiveTasks
+	Dictionary_2_t403063CE4960B4F46C688912237C6A27E550FF55* ___s_currentActiveTasks_20;
+	// System.Object System.Threading.Tasks.Task::s_activeTasksLock
+	RuntimeObject* ___s_activeTasksLock_21;
+};
+
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_ThreadStaticFields
+{
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::t_currentTask
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___t_currentTask_12;
+	// System.Threading.Tasks.StackGuard System.Threading.Tasks.Task::t_stackGuard
+	StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352* ___t_stackGuard_13;
+};
+
 // UnityEngine.Events.UnityEventBase
 struct UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8  : public RuntimeObject
 {
@@ -782,6 +891,27 @@ struct UnityEvent_2_tCFCF0C97EE0ABE297CC34E23A38D361505D5AAFF  : public UnityEve
 {
 	// System.Object[] UnityEngine.Events.UnityEvent`2::m_InvokeArray
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray_3;
+};
+
+// System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF 
+{
+	// System.Runtime.CompilerServices.IAsyncStateMachine System.Runtime.CompilerServices.AsyncMethodBuilderCore::m_stateMachine
+	RuntimeObject* ___m_stateMachine_0;
+	// System.Action System.Runtime.CompilerServices.AsyncMethodBuilderCore::m_defaultContextAction
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___m_defaultContextAction_1;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_pinvoke
+{
+	RuntimeObject* ___m_stateMachine_0;
+	Il2CppMethodPointer ___m_defaultContextAction_1;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_com
+{
+	RuntimeObject* ___m_stateMachine_0;
+	Il2CppMethodPointer ___m_defaultContextAction_1;
 };
 
 // System.Boolean
@@ -1026,14 +1156,18 @@ struct StandardPurchasingModule_t988B3F7D9F73F5C6458E0DBB35AC92CDD3DA2489  : pub
 	RuntimeObject* ___U3CloggerU3Ek__BackingField_8;
 	// UnityEngine.Purchasing.StandardPurchasingModule/StoreInstance UnityEngine.Purchasing.StandardPurchasingModule::<storeInstance>k__BackingField
 	StoreInstance_tE334F08374C14889F3118AFD0E1F280950C138D6* ___U3CstoreInstanceU3Ek__BackingField_9;
+	// UnityEngine.Purchasing.Telemetry.ITelemetryMetricsInstanceWrapper UnityEngine.Purchasing.StandardPurchasingModule::<telemetryMetricsInstanceWrapper>k__BackingField
+	RuntimeObject* ___U3CtelemetryMetricsInstanceWrapperU3Ek__BackingField_10;
+	// UnityEngine.Purchasing.Telemetry.ITelemetryDiagnosticsInstanceWrapper UnityEngine.Purchasing.StandardPurchasingModule::<telemetryDiagnosticsInstanceWrapper>k__BackingField
+	RuntimeObject* ___U3CtelemetryDiagnosticsInstanceWrapperU3Ek__BackingField_11;
 	// System.Boolean UnityEngine.Purchasing.StandardPurchasingModule::usingMockMicrosoft
-	bool ___usingMockMicrosoft_11;
+	bool ___usingMockMicrosoft_13;
 	// UnityEngine.Purchasing.FakeStoreUIMode UnityEngine.Purchasing.StandardPurchasingModule::<useFakeStoreUIMode>k__BackingField
-	int32_t ___U3CuseFakeStoreUIModeU3Ek__BackingField_12;
+	int32_t ___U3CuseFakeStoreUIModeU3Ek__BackingField_14;
 	// System.Boolean UnityEngine.Purchasing.StandardPurchasingModule::<useFakeStoreAlways>k__BackingField
-	bool ___U3CuseFakeStoreAlwaysU3Ek__BackingField_13;
+	bool ___U3CuseFakeStoreAlwaysU3Ek__BackingField_15;
 	// UnityEngine.Purchasing.WinRTStore UnityEngine.Purchasing.StandardPurchasingModule::windowsStore
-	WinRTStore_t48E00F03328D89136362A032D73E709EF91A3777* ___windowsStore_14;
+	WinRTStore_t48E00F03328D89136362A032D73E709EF91A3777* ___windowsStore_16;
 };
 
 struct StandardPurchasingModule_t988B3F7D9F73F5C6458E0DBB35AC92CDD3DA2489_StaticFields
@@ -1041,7 +1175,24 @@ struct StandardPurchasingModule_t988B3F7D9F73F5C6458E0DBB35AC92CDD3DA2489_Static
 	// UnityEngine.Purchasing.StandardPurchasingModule UnityEngine.Purchasing.StandardPurchasingModule::ModuleInstance
 	StandardPurchasingModule_t988B3F7D9F73F5C6458E0DBB35AC92CDD3DA2489* ___ModuleInstance_6;
 	// System.Collections.Generic.Dictionary`2<UnityEngine.Purchasing.AppStore,System.String> UnityEngine.Purchasing.StandardPurchasingModule::AndroidStoreNameMap
-	Dictionary_2_t74667C424CDD2B5DB81CEC61E57169FA17BCF782* ___AndroidStoreNameMap_10;
+	Dictionary_2_t74667C424CDD2B5DB81CEC61E57169FA17BCF782* ___AndroidStoreNameMap_12;
+};
+
+// System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 
+{
+	// System.Threading.Tasks.Task System.Runtime.CompilerServices.TaskAwaiter::m_task
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_marshaled_pinvoke
+{
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_marshaled_com
+{
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
 };
 
 // UnityEngine.Events.UnityEvent
@@ -1086,6 +1237,31 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		};
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
+};
+
+// System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+struct AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D 
+{
+	// System.Threading.SynchronizationContext System.Runtime.CompilerServices.AsyncVoidMethodBuilder::m_synchronizationContext
+	SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0* ___m_synchronizationContext_0;
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncVoidMethodBuilder::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task System.Runtime.CompilerServices.AsyncVoidMethodBuilder::m_task
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_2;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+struct AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshaled_pinvoke
+{
+	SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0* ___m_synchronizationContext_0;
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_pinvoke ___m_coreState_1;
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_2;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+struct AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshaled_com
+{
+	SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0* ___m_synchronizationContext_0;
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_com ___m_coreState_1;
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_2;
 };
 
 // UnityEngine.UI.ColorBlock
@@ -1178,6 +1354,89 @@ struct Delegate_t_marshaled_com
 	int32_t ___method_is_virtual_12;
 };
 
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
@@ -1266,6 +1525,17 @@ struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvo
 struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 {
 	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16
+struct U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2 
+{
+	// System.Int32 UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16::<>t__builder
+	AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D ___U3CU3Et__builder_1;
+	// System.Runtime.CompilerServices.TaskAwaiter UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16::<>u__1
+	TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 ___U3CU3Eu__1_2;
 };
 
 // System.Action`1<System.Boolean>
@@ -1626,6 +1896,8 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m24A0E6D20988F35E631F653D2F454DE416651718_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* ___stateMachine0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(T)
@@ -1638,6 +1910,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m2D17DA0F4C5D0E8035DBA3AFF2E4CD4728BD1286_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* ___awaiter0, U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* ___stateMachine1, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Purchasing.CodelessIAPStoreListener::GetStoreExtensions<System.Object>()
@@ -1690,10 +1964,19 @@ inline void List_1__ctor_m4EB160F19392823782B2C12C7E19F4E96BAAF735 (List_1_tEA5A
 }
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Purchasing.CodelessIAPStoreListener::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodelessIAPStoreListener__ctor_mA5E552B229398B582F0763C918361C242266DF83 (CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Purchasing.CodelessIAPStoreListener::InitializePurchasing()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodelessIAPStoreListener_InitializePurchasing_mCF45C105FEC2A08E6FF4B5402C9D35FC4B934924 (const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.AsyncVoidMethodBuilder System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D AsyncVoidMethodBuilder_Create_m13D0B23DD350C14035918384E10AF641E6B9EE67 (const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16>(TStateMachine&)
+inline void AsyncVoidMethodBuilder_Start_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m24A0E6D20988F35E631F653D2F454DE416651718 (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*, U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2*, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m24A0E6D20988F35E631F653D2F454DE416651718_gshared)(__this, ___stateMachine0, method);
+}
+// System.Boolean UnityEngine.Purchasing.CodelessIAPStoreListener::ShouldAutoInitUgs()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CodelessIAPStoreListener_ShouldAutoInitUgs_m4A72BB4B09F2D9ECD0C45D14E0092716EE2D0E12 (const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task System.Threading.Tasks.Task::get_CompletedTask()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* Task_get_CompletedTask_m1567097D0142D009DC8F9B70DA2C55DA651D55E9_inline (const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task Unity.Services.Core.UnityServices::InitializeAsync()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* UnityServices_InitializeAsync_mDC1CB3B695B5497E7159CE261445C907B26D223A (const RuntimeMethod* method) ;
 // System.Collections.Generic.ICollection`1<UnityEngine.Purchasing.ProductCatalogItem> UnityEngine.Purchasing.ProductCatalog::get_allProducts()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ProductCatalog_get_allProducts_m93A191445C8495D516A695D8708996C8790EF1C7_inline (ProductCatalog_t6F6B11865D55D089683F954BB3B223C00B33F8E1* __this, const RuntimeMethod* method) ;
 // System.Boolean System.String::op_Equality(System.String,System.String)
@@ -1788,6 +2071,33 @@ inline bool Enumerator_MoveNext_mCF4FCF4676A858509D81ACF13266CE933156DE8F (Enume
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Purchasing.IAPListener::OnPurchaseFailed(UnityEngine.Purchasing.Product,UnityEngine.Purchasing.PurchaseFailureReason)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IAPListener_OnPurchaseFailed_mB361558BB603975A6B5F07BD9F64D432BBD83550 (IAPListener_t03EC13DC1694B8AD722FAFC7B9D0E41673AA7C16* __this, Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* ___product0, int32_t ___reason1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.CodelessIAPStoreListener::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodelessIAPStoreListener__ctor_mA5E552B229398B582F0763C918361C242266DF83 (CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6* __this, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task UnityEngine.Purchasing.CodelessIAPStoreListener::AutoInitializeUnityGamingServicesIfEnabled()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* CodelessIAPStoreListener_AutoInitializeUnityGamingServicesIfEnabled_mB4B900E915059B9BA915BEAC5EC03E6840315704 (const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.TaskAwaiter System.Threading.Tasks.Task::GetAwaiter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 Task_GetAwaiter_m08B368EAC939DD35D0AC428180822255A442CA29 (Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Runtime.CompilerServices.TaskAwaiter::get_IsCompleted()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TaskAwaiter_get_IsCompleted_mC236D276FBE3A271B56EE13FCAF2C96E48453ED8 (TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16>(TAwaiter&,TStateMachine&)
+inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m2D17DA0F4C5D0E8035DBA3AFF2E4CD4728BD1286 (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* ___awaiter0, U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*, TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833*, U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2*, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m2D17DA0F4C5D0E8035DBA3AFF2E4CD4728BD1286_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void System.Runtime.CompilerServices.TaskAwaiter::GetResult()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskAwaiter_GetResult_mC1D712500AE49B4A89C85D6B79D87D1BA9A6B94D (TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.CodelessIAPStoreListener::InitializePurchasing()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodelessIAPStoreListener_InitializePurchasing_mCF45C105FEC2A08E6FF4B5402C9D35FC4B934924 (const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::SetException(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_SetException_mD9A6F5D1A99A62AC9DF322901BFDE05193CB177B (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, Exception_t* ___exception0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::SetResult()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_SetResult_m008490FDF057D5F5D871F537C7A58BE36027F3DC (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_MoveNext_mA8745BF31014C60BF9C2744F8AFE2240690CD48F (U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_SetStateMachine_m48640FB81C34D4C2B5A5BBA7F5AE17DC50BF1A25 (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_SetStateMachine_mFD1A71A09A2D24239238FA7F713666AFD930FDB1 (U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.UI.Button>()
 inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
@@ -2105,32 +2415,99 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodelessIAPStoreListener_CreateCodelessI
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncVoidMethodBuilder_Start_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m24A0E6D20988F35E631F653D2F454DE416651718_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D L_0;
+		L_0 = AsyncVoidMethodBuilder_Create_m13D0B23DD350C14035918384E10AF641E6B9EE67(NULL);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_synchronizationContext_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_1 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncVoidMethodBuilder_Start_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m24A0E6D20988F35E631F653D2F454DE416651718(L_1, (&V_0), AsyncVoidMethodBuilder_Start_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m24A0E6D20988F35E631F653D2F454DE416651718_RuntimeMethod_var);
+		return;
+	}
+}
+// System.Threading.Tasks.Task UnityEngine.Purchasing.CodelessIAPStoreListener::AutoInitializeUnityGamingServicesIfEnabled()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* CodelessIAPStoreListener_AutoInitializeUnityGamingServicesIfEnabled_mB4B900E915059B9BA915BEAC5EC03E6840315704 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return ShouldAutoInitUgs()
+		//     ? UnityServices.InitializeAsync()
+		//     : Task.CompletedTask;
+		bool L_0;
+		L_0 = CodelessIAPStoreListener_ShouldAutoInitUgs_m4A72BB4B09F2D9ECD0C45D14E0092716EE2D0E12(NULL);
+		if (L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_1;
+		L_1 = Task_get_CompletedTask_m1567097D0142D009DC8F9B70DA2C55DA651D55E9_inline(NULL);
+		return L_1;
+	}
+
+IL_000d:
+	{
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_2;
+		L_2 = UnityServices_InitializeAsync_mDC1CB3B695B5497E7159CE261445C907B26D223A(NULL);
+		return L_2;
+	}
+}
+// System.Boolean UnityEngine.Purchasing.CodelessIAPStoreListener::ShouldAutoInitUgs()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CodelessIAPStoreListener_ShouldAutoInitUgs_m4A72BB4B09F2D9ECD0C45D14E0092716EE2D0E12 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// instance = new CodelessIAPStoreListener();
-		CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6* L_0 = (CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6*)il2cpp_codegen_object_new(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var);
+		// return instance.catalog.enableCodelessAutoInitialization &&
+		//        instance.catalog.enableUnityGamingServicesAutoInitialization;
+		CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6* L_0 = ((CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_StaticFields*)il2cpp_codegen_static_fields_for(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var))->___instance_0;
 		NullCheck(L_0);
-		CodelessIAPStoreListener__ctor_mA5E552B229398B582F0763C918361C242266DF83(L_0, NULL);
-		((CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_StaticFields*)il2cpp_codegen_static_fields_for(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var))->___instance_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_StaticFields*)il2cpp_codegen_static_fields_for(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var))->___instance_0), (void*)L_0);
-		// if (!unityPurchasingInitialized)
-		bool L_1 = ((CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_StaticFields*)il2cpp_codegen_static_fields_for(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var))->___unityPurchasingInitialized_3;
-		if (L_1)
+		ProductCatalog_t6F6B11865D55D089683F954BB3B223C00B33F8E1* L_1 = L_0->___catalog_7;
+		NullCheck(L_1);
+		bool L_2 = L_1->___enableCodelessAutoInitialization_3;
+		if (!L_2)
 		{
-			goto IL_0016;
+			goto IL_0021;
 		}
 	}
 	{
-		// InitializePurchasing();
-		CodelessIAPStoreListener_InitializePurchasing_mCF45C105FEC2A08E6FF4B5402C9D35FC4B934924(NULL);
+		CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6* L_3 = ((CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_StaticFields*)il2cpp_codegen_static_fields_for(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var))->___instance_0;
+		NullCheck(L_3);
+		ProductCatalog_t6F6B11865D55D089683F954BB3B223C00B33F8E1* L_4 = L_3->___catalog_7;
+		NullCheck(L_4);
+		bool L_5 = L_4->___enableUnityGamingServicesAutoInitialization_4;
+		return L_5;
 	}
 
-IL_0016:
+IL_0021:
 	{
-		// }
-		return;
+		return (bool)0;
 	}
 }
 // UnityEngine.Purchasing.IStoreController UnityEngine.Purchasing.CodelessIAPStoreListener::get_StoreController()
@@ -3061,6 +3438,164 @@ IL_00ac:
 		// }
 		return;
 	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_MoveNext_mA8745BF31014C60BF9C2744F8AFE2240690CD48F (U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m2D17DA0F4C5D0E8035DBA3AFF2E4CD4728BD1286_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Exception_t* V_2 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_1 = V_0;
+			if (!L_1)
+			{
+				goto IL_004f_1;
+			}
+		}
+		{
+			// instance = new CodelessIAPStoreListener();
+			CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6* L_2 = (CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6*)il2cpp_codegen_object_new(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var);
+			NullCheck(L_2);
+			CodelessIAPStoreListener__ctor_mA5E552B229398B582F0763C918361C242266DF83(L_2, NULL);
+			((CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_StaticFields*)il2cpp_codegen_static_fields_for(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var))->___instance_0 = L_2;
+			Il2CppCodeGenWriteBarrier((void**)(&((CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_StaticFields*)il2cpp_codegen_static_fields_for(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var))->___instance_0), (void*)L_2);
+			// if (!unityPurchasingInitialized)
+			bool L_3 = ((CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_StaticFields*)il2cpp_codegen_static_fields_for(CodelessIAPStoreListener_tF75D3335EB4540A5DB617445D4E9494D7E19F3D6_il2cpp_TypeInfo_var))->___unityPurchasingInitialized_3;
+			if (L_3)
+			{
+				goto IL_0077_1;
+			}
+		}
+		{
+			// await AutoInitializeUnityGamingServicesIfEnabled();
+			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_4;
+			L_4 = CodelessIAPStoreListener_AutoInitializeUnityGamingServicesIfEnabled_mB4B900E915059B9BA915BEAC5EC03E6840315704(NULL);
+			NullCheck(L_4);
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_5;
+			L_5 = Task_GetAwaiter_m08B368EAC939DD35D0AC428180822255A442CA29(L_4, NULL);
+			V_1 = L_5;
+			bool L_6;
+			L_6 = TaskAwaiter_get_IsCompleted_mC236D276FBE3A271B56EE13FCAF2C96E48453ED8((&V_1), NULL);
+			if (L_6)
+			{
+				goto IL_006b_1;
+			}
+		}
+		{
+			int32_t L_7 = 0;
+			V_0 = L_7;
+			__this->___U3CU3E1__state_0 = L_7;
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_8 = V_1;
+			__this->___U3CU3Eu__1_2 = L_8;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_2))->___m_task_0), (void*)NULL);
+			AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_9 = (&__this->___U3CU3Et__builder_1);
+			AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m2D17DA0F4C5D0E8035DBA3AFF2E4CD4728BD1286(L_9, (&V_1), __this, AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2_m2D17DA0F4C5D0E8035DBA3AFF2E4CD4728BD1286_RuntimeMethod_var);
+			goto IL_00a3;
+		}
+
+IL_004f_1:
+		{
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_10 = __this->___U3CU3Eu__1_2;
+			V_1 = L_10;
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* L_11 = (&__this->___U3CU3Eu__1_2);
+			il2cpp_codegen_initobj(L_11, sizeof(TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833));
+			int32_t L_12 = (-1);
+			V_0 = L_12;
+			__this->___U3CU3E1__state_0 = L_12;
+		}
+
+IL_006b_1:
+		{
+			TaskAwaiter_GetResult_mC1D712500AE49B4A89C85D6B79D87D1BA9A6B94D((&V_1), NULL);
+			// InitializePurchasing();
+			CodelessIAPStoreListener_InitializePurchasing_mCF45C105FEC2A08E6FF4B5402C9D35FC4B934924(NULL);
+		}
+
+IL_0077_1:
+		{
+			goto IL_0090;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0079;
+		}
+		throw e;
+	}
+
+CATCH_0079:
+	{// begin catch(System.Exception)
+		V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_13 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_14 = V_2;
+		AsyncVoidMethodBuilder_SetException_mD9A6F5D1A99A62AC9DF322901BFDE05193CB177B(L_13, L_14, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_00a3;
+	}// end catch (depth: 1)
+
+IL_0090:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_15 = (&__this->___U3CU3Et__builder_1);
+		AsyncVoidMethodBuilder_SetResult_m008490FDF057D5F5D871F537C7A58BE36027F3DC(L_15, NULL);
+	}
+
+IL_00a3:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_MoveNext_mA8745BF31014C60BF9C2744F8AFE2240690CD48F_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2*>(__this + _offset);
+	U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_MoveNext_mA8745BF31014C60BF9C2744F8AFE2240690CD48F(_thisAdjusted, method);
+}
+// System.Void UnityEngine.Purchasing.CodelessIAPStoreListener/<CreateCodelessIAPStoreListenerInstance>d__16::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_SetStateMachine_mFD1A71A09A2D24239238FA7F713666AFD930FDB1 (U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	{
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncVoidMethodBuilder_SetStateMachine_m48640FB81C34D4C2B5A5BBA7F5AE17DC50BF1A25(L_0, L_1, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_SetStateMachine_mFD1A71A09A2D24239238FA7F713666AFD930FDB1_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_t4221BF426416BA35A5BDC845EAC385FA91358FC2*>(__this + _offset);
+	U3CCreateCodelessIAPStoreListenerInstanceU3Ed__16_SetStateMachine_mFD1A71A09A2D24239238FA7F713666AFD930FDB1(_thisAdjusted, ___stateMachine0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -4225,15 +4760,29 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StandardPurchasingModule_set
 	{
 		// public FakeStoreUIMode useFakeStoreUIMode { get; set; }
 		int32_t L_0 = ___value0;
-		__this->___U3CuseFakeStoreUIModeU3Ek__BackingField_12 = L_0;
+		__this->___U3CuseFakeStoreUIModeU3Ek__BackingField_14 = L_0;
 		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* Task_get_CompletedTask_m1567097D0142D009DC8F9B70DA2C55DA651D55E9_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_0 = ((Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_StaticFields*)il2cpp_codegen_static_fields_for(Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var))->___U3CCompletedTaskU3Ek__BackingField_16;
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ProductCatalog_get_allProducts_m93A191445C8495D516A695D8708996C8790EF1C7_inline (ProductCatalog_t6F6B11865D55D089683F954BB3B223C00B33F8E1* __this, const RuntimeMethod* method) 
 {
 	{
 		// public ICollection<ProductCatalogItem> allProducts => products;
-		List_1_tF9E4155F905E46DBB10A4779C193F32620147794* L_0 = __this->___products_4;
+		List_1_tF9E4155F905E46DBB10A4779C193F32620147794* L_0 = __this->___products_5;
 		return L_0;
 	}
 }

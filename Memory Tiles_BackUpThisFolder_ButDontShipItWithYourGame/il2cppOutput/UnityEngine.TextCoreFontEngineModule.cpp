@@ -671,39 +671,6 @@ struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4  : public Texture_t79
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// System.UInt32[]
-struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA  : public RuntimeArray
-{
-	ALIGN_FIELD (8) uint32_t m_Items[1];
-
-	inline uint32_t GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline uint32_t* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, uint32_t value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline uint32_t GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline uint32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, uint32_t value)
-	{
-		m_Items[index] = value;
-	}
-};
 // UnityEngine.TextCore.GlyphRect[]
 struct GlyphRectU5BU5D_t494B690215E3F3F42B6F216930A461256CE2CC70  : public RuntimeArray
 {
@@ -770,6 +737,39 @@ struct GlyphU5BU5D_t345CEC8703A6C650639C40DB7D35269A2D467FC5  : public RuntimeAr
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.UInt32[]
+struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint32_t m_Items[1];
+
+	inline uint32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint32_t value)
+	{
+		m_Items[index] = value;
 	}
 };
 // UnityEngine.TextCore.LowLevel.GlyphMarshallingStruct[]
@@ -977,16 +977,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlyphMetrics_Equals_mB8EE2CF8E9D9D51AF2C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlyphMetrics_Equals_mA8F8587C1725FA86DD6E87CFDFF0DDB9996112CB (GlyphMetrics_t6C1C65A891A6279A0EE807C436436B1E44F7AF1A* __this, GlyphMetrics_t6C1C65A891A6279A0EE807C436436B1E44F7AF1A ___other0, const RuntimeMethod* method) ;
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
-// System.UInt32 UnityEngine.TextCore.Text.MarkToBaseAdjustmentRecord::get_baseGlyphID()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToBaseAdjustmentRecord_get_baseGlyphID_m5778D8395B9971DC2EBCFBA972CB50E5B8514564 (MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* __this, const RuntimeMethod* method) ;
-// System.UInt32 UnityEngine.TextCore.Text.MarkToBaseAdjustmentRecord::get_markGlyphID()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToBaseAdjustmentRecord_get_markGlyphID_mDE636E337D5907066BC6310D619CDA360C25DE57 (MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* __this, const RuntimeMethod* method) ;
-// System.UInt32 UnityEngine.TextCore.Text.MarkToMarkAdjustmentRecord::get_baseMarkGlyphID()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToMarkAdjustmentRecord_get_baseMarkGlyphID_mE047CD41DB49595F12ECB3C5450399FB83CE18E1 (MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* __this, const RuntimeMethod* method) ;
-// System.UInt32 UnityEngine.TextCore.Text.MarkToMarkAdjustmentRecord::get_combiningMarkGlyphID()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToMarkAdjustmentRecord_get_combiningMarkGlyphID_m7EFB92B1015FADBFD71CA1B88658396C9CCFEEF1 (MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* __this, const RuntimeMethod* method) ;
-// System.UInt32[] UnityEngine.TextCore.Text.LigatureSubstitutionRecord::get_componentGlyphIDs()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* LigatureSubstitutionRecord_get_componentGlyphIDs_m51F204841F5D6FB117A390DD231B113A7036A706 (LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.TextCore.LowLevel.FontEngine::InitializeFontEngine_Internal()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FontEngine_InitializeFontEngine_Internal_m64ABDC3A5AF9D87C995FF6B98979933E7074AB06 (const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_And_FaceIndex_Internal(System.String,System.Int32,System.Int32)
@@ -1088,6 +1078,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GlyphValueRecord_t780927A39D46924E0D546A2AE5D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GlyphAdjustmentRecord_tC7A1B2E0AC7C4ED9CDB8E95E48790A46B6F315F7 GlyphPairAdjustmentRecord_get_firstAdjustmentRecord_m867469548F17B298F893B78EE2F93D34E4A6C39C (GlyphPairAdjustmentRecord_t6E4295094D349DBF22BC59116FBC8F22EA55420E* __this, const RuntimeMethod* method) ;
 // UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord::get_secondAdjustmentRecord()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GlyphAdjustmentRecord_tC7A1B2E0AC7C4ED9CDB8E95E48790A46B6F315F7 GlyphPairAdjustmentRecord_get_secondAdjustmentRecord_mFDFECB1F7A38E22BD2388FFE9C71E732F6B44D91 (GlyphPairAdjustmentRecord_t6E4295094D349DBF22BC59116FBC8F22EA55420E* __this, const RuntimeMethod* method) ;
+// System.UInt32 UnityEngine.TextCore.Text.MarkToBaseAdjustmentRecord::get_baseGlyphID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToBaseAdjustmentRecord_get_baseGlyphID_m5778D8395B9971DC2EBCFBA972CB50E5B8514564 (MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* __this, const RuntimeMethod* method) ;
+// System.UInt32 UnityEngine.TextCore.Text.MarkToBaseAdjustmentRecord::get_markGlyphID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToBaseAdjustmentRecord_get_markGlyphID_mDE636E337D5907066BC6310D619CDA360C25DE57 (MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* __this, const RuntimeMethod* method) ;
+// System.UInt32 UnityEngine.TextCore.Text.MarkToMarkAdjustmentRecord::get_baseMarkGlyphID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToMarkAdjustmentRecord_get_baseMarkGlyphID_mE047CD41DB49595F12ECB3C5450399FB83CE18E1 (MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* __this, const RuntimeMethod* method) ;
+// System.UInt32 UnityEngine.TextCore.Text.MarkToMarkAdjustmentRecord::get_combiningMarkGlyphID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToMarkAdjustmentRecord_get_combiningMarkGlyphID_m7EFB92B1015FADBFD71CA1B88658396C9CCFEEF1 (MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* __this, const RuntimeMethod* method) ;
+// System.UInt32[] UnityEngine.TextCore.Text.LigatureSubstitutionRecord::get_componentGlyphIDs()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* LigatureSubstitutionRecord_get_componentGlyphIDs_m51F204841F5D6FB117A390DD231B113A7036A706 (LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27* __this, const RuntimeMethod* method) ;
 // System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.TextCore.GlyphRect>::AddWithResize(T)
@@ -2902,275 +2902,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Glyph__ctor_m71D55A8FBEA48ECCD78D65CAC9D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.UInt32 UnityEngine.TextCore.Text.MarkToBaseAdjustmentRecord::get_baseGlyphID()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToBaseAdjustmentRecord_get_baseGlyphID_m5778D8395B9971DC2EBCFBA972CB50E5B8514564 (MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* __this, const RuntimeMethod* method) 
-{
-	uint32_t V_0 = 0;
-	{
-		uint32_t L_0 = __this->___m_BaseGlyphID_0;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		uint32_t L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  uint32_t MarkToBaseAdjustmentRecord_get_baseGlyphID_m5778D8395B9971DC2EBCFBA972CB50E5B8514564_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437*>(__this + _offset);
-	uint32_t _returnValue;
-	_returnValue = MarkToBaseAdjustmentRecord_get_baseGlyphID_m5778D8395B9971DC2EBCFBA972CB50E5B8514564(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.UInt32 UnityEngine.TextCore.Text.MarkToBaseAdjustmentRecord::get_markGlyphID()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToBaseAdjustmentRecord_get_markGlyphID_mDE636E337D5907066BC6310D619CDA360C25DE57 (MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* __this, const RuntimeMethod* method) 
-{
-	uint32_t V_0 = 0;
-	{
-		uint32_t L_0 = __this->___m_MarkGlyphID_2;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		uint32_t L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  uint32_t MarkToBaseAdjustmentRecord_get_markGlyphID_mDE636E337D5907066BC6310D619CDA360C25DE57_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437*>(__this + _offset);
-	uint32_t _returnValue;
-	_returnValue = MarkToBaseAdjustmentRecord_get_markGlyphID_mDE636E337D5907066BC6310D619CDA360C25DE57(_thisAdjusted, method);
-	return _returnValue;
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.UInt32 UnityEngine.TextCore.Text.MarkToMarkAdjustmentRecord::get_baseMarkGlyphID()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToMarkAdjustmentRecord_get_baseMarkGlyphID_mE047CD41DB49595F12ECB3C5450399FB83CE18E1 (MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* __this, const RuntimeMethod* method) 
-{
-	uint32_t V_0 = 0;
-	{
-		uint32_t L_0 = __this->___m_BaseMarkGlyphID_0;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		uint32_t L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  uint32_t MarkToMarkAdjustmentRecord_get_baseMarkGlyphID_mE047CD41DB49595F12ECB3C5450399FB83CE18E1_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6*>(__this + _offset);
-	uint32_t _returnValue;
-	_returnValue = MarkToMarkAdjustmentRecord_get_baseMarkGlyphID_mE047CD41DB49595F12ECB3C5450399FB83CE18E1(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.UInt32 UnityEngine.TextCore.Text.MarkToMarkAdjustmentRecord::get_combiningMarkGlyphID()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToMarkAdjustmentRecord_get_combiningMarkGlyphID_m7EFB92B1015FADBFD71CA1B88658396C9CCFEEF1 (MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* __this, const RuntimeMethod* method) 
-{
-	uint32_t V_0 = 0;
-	{
-		uint32_t L_0 = __this->___m_CombiningMarkGlyphID_2;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		uint32_t L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  uint32_t MarkToMarkAdjustmentRecord_get_combiningMarkGlyphID_m7EFB92B1015FADBFD71CA1B88658396C9CCFEEF1_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6*>(__this + _offset);
-	uint32_t _returnValue;
-	_returnValue = MarkToMarkAdjustmentRecord_get_combiningMarkGlyphID_m7EFB92B1015FADBFD71CA1B88658396C9CCFEEF1(_thisAdjusted, method);
-	return _returnValue;
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Conversion methods for marshalling of: UnityEngine.TextCore.Text.MultipleSubstitutionRecord
-IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_pinvoke(const MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC& unmarshaled, MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_pinvoke& marshaled)
-{
-	marshaled.___m_TargetGlyphID_0 = unmarshaled.___m_TargetGlyphID_0;
-	marshaled.___m_SubstituteGlyphIDs_1 = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_UI4, unmarshaled.___m_SubstituteGlyphIDs_1);
-}
-IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_pinvoke_back(const MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_pinvoke& marshaled, MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC& unmarshaled)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	uint32_t unmarshaledm_TargetGlyphID_temp_0 = 0;
-	unmarshaledm_TargetGlyphID_temp_0 = marshaled.___m_TargetGlyphID_0;
-	unmarshaled.___m_TargetGlyphID_0 = unmarshaledm_TargetGlyphID_temp_0;
-	unmarshaled.___m_SubstituteGlyphIDs_1 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_SubstituteGlyphIDs_1);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___m_SubstituteGlyphIDs_1), (void*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_SubstituteGlyphIDs_1));
-}
-// Conversion method for clean up from marshalling of: UnityEngine.TextCore.Text.MultipleSubstitutionRecord
-IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_pinvoke_cleanup(MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_pinvoke& marshaled)
-{
-	il2cpp_codegen_com_destroy_safe_array(marshaled.___m_SubstituteGlyphIDs_1);
-	marshaled.___m_SubstituteGlyphIDs_1 = NULL;
-}
-// Conversion methods for marshalling of: UnityEngine.TextCore.Text.MultipleSubstitutionRecord
-IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_com(const MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC& unmarshaled, MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_com& marshaled)
-{
-	marshaled.___m_TargetGlyphID_0 = unmarshaled.___m_TargetGlyphID_0;
-	marshaled.___m_SubstituteGlyphIDs_1 = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_UI4, unmarshaled.___m_SubstituteGlyphIDs_1);
-}
-IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_com_back(const MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_com& marshaled, MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC& unmarshaled)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	uint32_t unmarshaledm_TargetGlyphID_temp_0 = 0;
-	unmarshaledm_TargetGlyphID_temp_0 = marshaled.___m_TargetGlyphID_0;
-	unmarshaled.___m_TargetGlyphID_0 = unmarshaledm_TargetGlyphID_temp_0;
-	unmarshaled.___m_SubstituteGlyphIDs_1 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_SubstituteGlyphIDs_1);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___m_SubstituteGlyphIDs_1), (void*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_SubstituteGlyphIDs_1));
-}
-// Conversion method for clean up from marshalling of: UnityEngine.TextCore.Text.MultipleSubstitutionRecord
-IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_com_cleanup(MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_com& marshaled)
-{
-	il2cpp_codegen_com_destroy_safe_array(marshaled.___m_SubstituteGlyphIDs_1);
-	marshaled.___m_SubstituteGlyphIDs_1 = NULL;
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Conversion methods for marshalling of: UnityEngine.TextCore.Text.LigatureSubstitutionRecord
-IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_pinvoke(const LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27& unmarshaled, LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_pinvoke& marshaled)
-{
-	marshaled.___m_ComponentGlyphIDs_0 = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_UI4, unmarshaled.___m_ComponentGlyphIDs_0);
-	marshaled.___m_LigatureGlyphID_1 = unmarshaled.___m_LigatureGlyphID_1;
-}
-IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_pinvoke_back(const LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_pinvoke& marshaled, LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27& unmarshaled)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	unmarshaled.___m_ComponentGlyphIDs_0 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_ComponentGlyphIDs_0);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___m_ComponentGlyphIDs_0), (void*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_ComponentGlyphIDs_0));
-	uint32_t unmarshaledm_LigatureGlyphID_temp_1 = 0;
-	unmarshaledm_LigatureGlyphID_temp_1 = marshaled.___m_LigatureGlyphID_1;
-	unmarshaled.___m_LigatureGlyphID_1 = unmarshaledm_LigatureGlyphID_temp_1;
-}
-// Conversion method for clean up from marshalling of: UnityEngine.TextCore.Text.LigatureSubstitutionRecord
-IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_pinvoke_cleanup(LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_pinvoke& marshaled)
-{
-	il2cpp_codegen_com_destroy_safe_array(marshaled.___m_ComponentGlyphIDs_0);
-	marshaled.___m_ComponentGlyphIDs_0 = NULL;
-}
-// Conversion methods for marshalling of: UnityEngine.TextCore.Text.LigatureSubstitutionRecord
-IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_com(const LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27& unmarshaled, LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_com& marshaled)
-{
-	marshaled.___m_ComponentGlyphIDs_0 = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_UI4, unmarshaled.___m_ComponentGlyphIDs_0);
-	marshaled.___m_LigatureGlyphID_1 = unmarshaled.___m_LigatureGlyphID_1;
-}
-IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_com_back(const LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_com& marshaled, LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27& unmarshaled)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	unmarshaled.___m_ComponentGlyphIDs_0 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_ComponentGlyphIDs_0);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___m_ComponentGlyphIDs_0), (void*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_ComponentGlyphIDs_0));
-	uint32_t unmarshaledm_LigatureGlyphID_temp_1 = 0;
-	unmarshaledm_LigatureGlyphID_temp_1 = marshaled.___m_LigatureGlyphID_1;
-	unmarshaled.___m_LigatureGlyphID_1 = unmarshaledm_LigatureGlyphID_temp_1;
-}
-// Conversion method for clean up from marshalling of: UnityEngine.TextCore.Text.LigatureSubstitutionRecord
-IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_com_cleanup(LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_com& marshaled)
-{
-	il2cpp_codegen_com_destroy_safe_array(marshaled.___m_ComponentGlyphIDs_0);
-	marshaled.___m_ComponentGlyphIDs_0 = NULL;
-}
-// System.UInt32[] UnityEngine.TextCore.Text.LigatureSubstitutionRecord::get_componentGlyphIDs()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* LigatureSubstitutionRecord_get_componentGlyphIDs_m51F204841F5D6FB117A390DD231B113A7036A706 (LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27* __this, const RuntimeMethod* method) 
-{
-	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* V_0 = NULL;
-	{
-		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_0 = __this->___m_ComponentGlyphIDs_0;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* LigatureSubstitutionRecord_get_componentGlyphIDs_m51F204841F5D6FB117A390DD231B113A7036A706_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27*>(__this + _offset);
-	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* _returnValue;
-	_returnValue = LigatureSubstitutionRecord_get_componentGlyphIDs_m51F204841F5D6FB117A390DD231B113A7036A706(_thisAdjusted, method);
-	return _returnValue;
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 // Conversion methods for marshalling of: UnityEngine.TextCore.LowLevel.FontReference
 IL2CPP_EXTERN_C void FontReference_t550791D5AA7787156C3A229C65D7E1AC4BF76172_marshal_pinvoke(const FontReference_t550791D5AA7787156C3A229C65D7E1AC4BF76172& unmarshaled, FontReference_t550791D5AA7787156C3A229C65D7E1AC4BF76172_marshaled_pinvoke& marshaled)
 {
@@ -4765,14 +4496,6 @@ IL_001a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 // System.Single UnityEngine.TextCore.LowLevel.GlyphValueRecord::get_xPlacement()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GlyphValueRecord_get_xPlacement_m5E2B8B05A5DF57B2DC4B3795E71330CDDE1761C8 (GlyphValueRecord_t780927A39D46924E0D546A2AE5DDF1BB2B5A9C8E* __this, const RuntimeMethod* method) 
 {
@@ -5138,6 +4861,283 @@ IL2CPP_EXTERN_C  GlyphAdjustmentRecord_tC7A1B2E0AC7C4ED9CDB8E95E48790A46B6F315F7
 	_thisAdjusted = reinterpret_cast<GlyphPairAdjustmentRecord_t6E4295094D349DBF22BC59116FBC8F22EA55420E*>(__this + _offset);
 	GlyphAdjustmentRecord_tC7A1B2E0AC7C4ED9CDB8E95E48790A46B6F315F7 _returnValue;
 	_returnValue = GlyphPairAdjustmentRecord_get_secondAdjustmentRecord_mFDFECB1F7A38E22BD2388FFE9C71E732F6B44D91(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.UInt32 UnityEngine.TextCore.Text.MarkToBaseAdjustmentRecord::get_baseGlyphID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToBaseAdjustmentRecord_get_baseGlyphID_m5778D8395B9971DC2EBCFBA972CB50E5B8514564 (MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* __this, const RuntimeMethod* method) 
+{
+	uint32_t V_0 = 0;
+	{
+		uint32_t L_0 = __this->___m_BaseGlyphID_0;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		uint32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  uint32_t MarkToBaseAdjustmentRecord_get_baseGlyphID_m5778D8395B9971DC2EBCFBA972CB50E5B8514564_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437*>(__this + _offset);
+	uint32_t _returnValue;
+	_returnValue = MarkToBaseAdjustmentRecord_get_baseGlyphID_m5778D8395B9971DC2EBCFBA972CB50E5B8514564(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.UInt32 UnityEngine.TextCore.Text.MarkToBaseAdjustmentRecord::get_markGlyphID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToBaseAdjustmentRecord_get_markGlyphID_mDE636E337D5907066BC6310D619CDA360C25DE57 (MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* __this, const RuntimeMethod* method) 
+{
+	uint32_t V_0 = 0;
+	{
+		uint32_t L_0 = __this->___m_MarkGlyphID_2;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		uint32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  uint32_t MarkToBaseAdjustmentRecord_get_markGlyphID_mDE636E337D5907066BC6310D619CDA360C25DE57_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<MarkToBaseAdjustmentRecord_t149C456964004CCC59B1CDA7C4BE23C3E143D437*>(__this + _offset);
+	uint32_t _returnValue;
+	_returnValue = MarkToBaseAdjustmentRecord_get_markGlyphID_mDE636E337D5907066BC6310D619CDA360C25DE57(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.UInt32 UnityEngine.TextCore.Text.MarkToMarkAdjustmentRecord::get_baseMarkGlyphID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToMarkAdjustmentRecord_get_baseMarkGlyphID_mE047CD41DB49595F12ECB3C5450399FB83CE18E1 (MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* __this, const RuntimeMethod* method) 
+{
+	uint32_t V_0 = 0;
+	{
+		uint32_t L_0 = __this->___m_BaseMarkGlyphID_0;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		uint32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  uint32_t MarkToMarkAdjustmentRecord_get_baseMarkGlyphID_mE047CD41DB49595F12ECB3C5450399FB83CE18E1_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6*>(__this + _offset);
+	uint32_t _returnValue;
+	_returnValue = MarkToMarkAdjustmentRecord_get_baseMarkGlyphID_mE047CD41DB49595F12ECB3C5450399FB83CE18E1(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.UInt32 UnityEngine.TextCore.Text.MarkToMarkAdjustmentRecord::get_combiningMarkGlyphID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t MarkToMarkAdjustmentRecord_get_combiningMarkGlyphID_m7EFB92B1015FADBFD71CA1B88658396C9CCFEEF1 (MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* __this, const RuntimeMethod* method) 
+{
+	uint32_t V_0 = 0;
+	{
+		uint32_t L_0 = __this->___m_CombiningMarkGlyphID_2;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		uint32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  uint32_t MarkToMarkAdjustmentRecord_get_combiningMarkGlyphID_m7EFB92B1015FADBFD71CA1B88658396C9CCFEEF1_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<MarkToMarkAdjustmentRecord_t370034FCBFB0A949D7057628D44942A7814ACCF6*>(__this + _offset);
+	uint32_t _returnValue;
+	_returnValue = MarkToMarkAdjustmentRecord_get_combiningMarkGlyphID_m7EFB92B1015FADBFD71CA1B88658396C9CCFEEF1(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Conversion methods for marshalling of: UnityEngine.TextCore.Text.MultipleSubstitutionRecord
+IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_pinvoke(const MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC& unmarshaled, MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_pinvoke& marshaled)
+{
+	marshaled.___m_TargetGlyphID_0 = unmarshaled.___m_TargetGlyphID_0;
+	marshaled.___m_SubstituteGlyphIDs_1 = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_UI4, unmarshaled.___m_SubstituteGlyphIDs_1);
+}
+IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_pinvoke_back(const MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_pinvoke& marshaled, MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t unmarshaledm_TargetGlyphID_temp_0 = 0;
+	unmarshaledm_TargetGlyphID_temp_0 = marshaled.___m_TargetGlyphID_0;
+	unmarshaled.___m_TargetGlyphID_0 = unmarshaledm_TargetGlyphID_temp_0;
+	unmarshaled.___m_SubstituteGlyphIDs_1 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_SubstituteGlyphIDs_1);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___m_SubstituteGlyphIDs_1), (void*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_SubstituteGlyphIDs_1));
+}
+// Conversion method for clean up from marshalling of: UnityEngine.TextCore.Text.MultipleSubstitutionRecord
+IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_pinvoke_cleanup(MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___m_SubstituteGlyphIDs_1);
+	marshaled.___m_SubstituteGlyphIDs_1 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.TextCore.Text.MultipleSubstitutionRecord
+IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_com(const MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC& unmarshaled, MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_com& marshaled)
+{
+	marshaled.___m_TargetGlyphID_0 = unmarshaled.___m_TargetGlyphID_0;
+	marshaled.___m_SubstituteGlyphIDs_1 = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_UI4, unmarshaled.___m_SubstituteGlyphIDs_1);
+}
+IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_com_back(const MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_com& marshaled, MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t unmarshaledm_TargetGlyphID_temp_0 = 0;
+	unmarshaledm_TargetGlyphID_temp_0 = marshaled.___m_TargetGlyphID_0;
+	unmarshaled.___m_TargetGlyphID_0 = unmarshaledm_TargetGlyphID_temp_0;
+	unmarshaled.___m_SubstituteGlyphIDs_1 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_SubstituteGlyphIDs_1);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___m_SubstituteGlyphIDs_1), (void*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_SubstituteGlyphIDs_1));
+}
+// Conversion method for clean up from marshalling of: UnityEngine.TextCore.Text.MultipleSubstitutionRecord
+IL2CPP_EXTERN_C void MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshal_com_cleanup(MultipleSubstitutionRecord_tFE6A79431BC2A417E6789AE2AFDD0B0040E1A8AC_marshaled_com& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___m_SubstituteGlyphIDs_1);
+	marshaled.___m_SubstituteGlyphIDs_1 = NULL;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Conversion methods for marshalling of: UnityEngine.TextCore.Text.LigatureSubstitutionRecord
+IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_pinvoke(const LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27& unmarshaled, LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_pinvoke& marshaled)
+{
+	marshaled.___m_ComponentGlyphIDs_0 = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_UI4, unmarshaled.___m_ComponentGlyphIDs_0);
+	marshaled.___m_LigatureGlyphID_1 = unmarshaled.___m_LigatureGlyphID_1;
+}
+IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_pinvoke_back(const LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_pinvoke& marshaled, LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.___m_ComponentGlyphIDs_0 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_ComponentGlyphIDs_0);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___m_ComponentGlyphIDs_0), (void*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_ComponentGlyphIDs_0));
+	uint32_t unmarshaledm_LigatureGlyphID_temp_1 = 0;
+	unmarshaledm_LigatureGlyphID_temp_1 = marshaled.___m_LigatureGlyphID_1;
+	unmarshaled.___m_LigatureGlyphID_1 = unmarshaledm_LigatureGlyphID_temp_1;
+}
+// Conversion method for clean up from marshalling of: UnityEngine.TextCore.Text.LigatureSubstitutionRecord
+IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_pinvoke_cleanup(LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___m_ComponentGlyphIDs_0);
+	marshaled.___m_ComponentGlyphIDs_0 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.TextCore.Text.LigatureSubstitutionRecord
+IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_com(const LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27& unmarshaled, LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_com& marshaled)
+{
+	marshaled.___m_ComponentGlyphIDs_0 = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_UI4, unmarshaled.___m_ComponentGlyphIDs_0);
+	marshaled.___m_LigatureGlyphID_1 = unmarshaled.___m_LigatureGlyphID_1;
+}
+IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_com_back(const LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_com& marshaled, LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.___m_ComponentGlyphIDs_0 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_ComponentGlyphIDs_0);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___m_ComponentGlyphIDs_0), (void*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_UI4, UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var, marshaled.___m_ComponentGlyphIDs_0));
+	uint32_t unmarshaledm_LigatureGlyphID_temp_1 = 0;
+	unmarshaledm_LigatureGlyphID_temp_1 = marshaled.___m_LigatureGlyphID_1;
+	unmarshaled.___m_LigatureGlyphID_1 = unmarshaledm_LigatureGlyphID_temp_1;
+}
+// Conversion method for clean up from marshalling of: UnityEngine.TextCore.Text.LigatureSubstitutionRecord
+IL2CPP_EXTERN_C void LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshal_com_cleanup(LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27_marshaled_com& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___m_ComponentGlyphIDs_0);
+	marshaled.___m_ComponentGlyphIDs_0 = NULL;
+}
+// System.UInt32[] UnityEngine.TextCore.Text.LigatureSubstitutionRecord::get_componentGlyphIDs()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* LigatureSubstitutionRecord_get_componentGlyphIDs_m51F204841F5D6FB117A390DD231B113A7036A706 (LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27* __this, const RuntimeMethod* method) 
+{
+	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* V_0 = NULL;
+	{
+		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_0 = __this->___m_ComponentGlyphIDs_0;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* LigatureSubstitutionRecord_get_componentGlyphIDs_m51F204841F5D6FB117A390DD231B113A7036A706_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LigatureSubstitutionRecord_t844AF79A2241444ACECD38AA0B3FE16877EE5E27*>(__this + _offset);
+	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* _returnValue;
+	_returnValue = LigatureSubstitutionRecord_get_componentGlyphIDs_m51F204841F5D6FB117A390DD231B113A7036A706(_thisAdjusted, method);
 	return _returnValue;
 }
 #ifdef __clang__

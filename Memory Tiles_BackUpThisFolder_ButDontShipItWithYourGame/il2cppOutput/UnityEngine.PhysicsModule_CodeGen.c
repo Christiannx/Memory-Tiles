@@ -94,26 +94,26 @@ extern void RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39 (void
 extern void RaycastHit_get_normal_mD8741B70D2039C5CAFC4368D4CE59D89562040B5 (void);
 // 0x00000029 System.Single UnityEngine.RaycastHit::get_distance()
 extern void RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78 (void);
-// 0x0000002A System.Boolean UnityEngine.Collider::get_enabled()
-extern void Collider_get_enabled_mDBFB488088ADB14C8016A83EF445653AC5A4A12B (void);
-// 0x0000002B UnityEngine.Vector3 UnityEngine.Collider::ClosestPoint(UnityEngine.Vector3)
-extern void Collider_ClosestPoint_mFFF9B6F6CF9F18B22B325835A3E2E78A1C03BFCB (void);
-// 0x0000002C System.Void UnityEngine.Collider::ClosestPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
-extern void Collider_ClosestPoint_Injected_m4E218A16FABAA4615270B9CD82DC66E130AAFE77 (void);
-// 0x0000002D UnityEngine.Mesh UnityEngine.MeshCollider::get_sharedMesh()
+// 0x0000002A UnityEngine.Mesh UnityEngine.MeshCollider::get_sharedMesh()
 extern void MeshCollider_get_sharedMesh_mFB4B8534501C29930D2D3710D6D82E60093FA21E (void);
-// 0x0000002E System.Boolean UnityEngine.MeshCollider::get_convex()
+// 0x0000002B System.Boolean UnityEngine.MeshCollider::get_convex()
 extern void MeshCollider_get_convex_m0C0F6D0798413D633814D307EC970F7752B3C9D1 (void);
-// 0x0000002F System.Void UnityEngine.MeshCollider::set_convex(System.Boolean)
+// 0x0000002C System.Void UnityEngine.MeshCollider::set_convex(System.Boolean)
 extern void MeshCollider_set_convex_m20482D687240D0921BA76B77983403E55A2E3CE1 (void);
-// 0x00000030 UnityEngine.Vector3 UnityEngine.BoxCollider::get_center()
+// 0x0000002D UnityEngine.Vector3 UnityEngine.BoxCollider::get_center()
 extern void BoxCollider_get_center_mC370C79F9FC9398D0DD080500FA2EE14FC6E36C7 (void);
-// 0x00000031 UnityEngine.Vector3 UnityEngine.BoxCollider::get_size()
+// 0x0000002E UnityEngine.Vector3 UnityEngine.BoxCollider::get_size()
 extern void BoxCollider_get_size_mC1A2DD270B04DFF5961F9F90DC147C271F72258E (void);
-// 0x00000032 System.Void UnityEngine.BoxCollider::get_center_Injected(UnityEngine.Vector3&)
+// 0x0000002F System.Void UnityEngine.BoxCollider::get_center_Injected(UnityEngine.Vector3&)
 extern void BoxCollider_get_center_Injected_m48EBE71F021C53D4AE4D9F21C16E5E1E11510096 (void);
-// 0x00000033 System.Void UnityEngine.BoxCollider::get_size_Injected(UnityEngine.Vector3&)
+// 0x00000030 System.Void UnityEngine.BoxCollider::get_size_Injected(UnityEngine.Vector3&)
 extern void BoxCollider_get_size_Injected_m4F20D7B3D8FB4360C9E2986FB6A8CC66ABC89511 (void);
+// 0x00000031 System.Boolean UnityEngine.Collider::get_enabled()
+extern void Collider_get_enabled_mDBFB488088ADB14C8016A83EF445653AC5A4A12B (void);
+// 0x00000032 UnityEngine.Vector3 UnityEngine.Collider::ClosestPoint(UnityEngine.Vector3)
+extern void Collider_ClosestPoint_mFFF9B6F6CF9F18B22B325835A3E2E78A1C03BFCB (void);
+// 0x00000033 System.Void UnityEngine.Collider::ClosestPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
+extern void Collider_ClosestPoint_Injected_m4E218A16FABAA4615270B9CD82DC66E130AAFE77 (void);
 // 0x00000034 UnityEngine.Vector3 UnityEngine.SphereCollider::get_center()
 extern void SphereCollider_get_center_m122A197607CD350873539A0EEE3BA10E8BE1759E (void);
 // 0x00000035 System.Single UnityEngine.SphereCollider::get_radius()
@@ -189,9 +189,6 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39,
 	RaycastHit_get_normal_mD8741B70D2039C5CAFC4368D4CE59D89562040B5,
 	RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78,
-	Collider_get_enabled_mDBFB488088ADB14C8016A83EF445653AC5A4A12B,
-	Collider_ClosestPoint_mFFF9B6F6CF9F18B22B325835A3E2E78A1C03BFCB,
-	Collider_ClosestPoint_Injected_m4E218A16FABAA4615270B9CD82DC66E130AAFE77,
 	MeshCollider_get_sharedMesh_mFB4B8534501C29930D2D3710D6D82E60093FA21E,
 	MeshCollider_get_convex_m0C0F6D0798413D633814D307EC970F7752B3C9D1,
 	MeshCollider_set_convex_m20482D687240D0921BA76B77983403E55A2E3CE1,
@@ -199,6 +196,9 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	BoxCollider_get_size_mC1A2DD270B04DFF5961F9F90DC147C271F72258E,
 	BoxCollider_get_center_Injected_m48EBE71F021C53D4AE4D9F21C16E5E1E11510096,
 	BoxCollider_get_size_Injected_m4F20D7B3D8FB4360C9E2986FB6A8CC66ABC89511,
+	Collider_get_enabled_mDBFB488088ADB14C8016A83EF445653AC5A4A12B,
+	Collider_ClosestPoint_mFFF9B6F6CF9F18B22B325835A3E2E78A1C03BFCB,
+	Collider_ClosestPoint_Injected_m4E218A16FABAA4615270B9CD82DC66E130AAFE77,
 	SphereCollider_get_center_m122A197607CD350873539A0EEE3BA10E8BE1759E,
 	SphereCollider_get_radius_m1BB513491906E76A4F71929E3DB72A1542309697,
 	SphereCollider_get_center_Injected_m26E71B48B49E3EF89A4DC523015F243A385CF0E9,
@@ -243,73 +243,73 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[11] =
 };
 static const int32_t s_InvokerIndices[67] = 
 {
-	7363,
-	11041,
-	6576,
-	7030,
-	7573,
-	8417,
-	6404,
-	6575,
-	7029,
-	7571,
-	7019,
-	7561,
-	8370,
-	9762,
-	6567,
-	7018,
-	7560,
-	8369,
-	6727,
-	6729,
-	7243,
-	7760,
-	8658,
+	8969,
+	12994,
+	8044,
+	8567,
+	9192,
+	10100,
+	7847,
+	8043,
+	8566,
+	9190,
+	8554,
+	9179,
+	10051,
+	11560,
+	8033,
+	8553,
+	9178,
+	10050,
+	8235,
+	8238,
+	8835,
+	9406,
+	10377,
+	8829,
+	9396,
+	10357,
+	11829,
+	8192,
+	8750,
+	9295,
+	10223,
+	7871,
+	8194,
+	8753,
+	9297,
+	12170,
+	8199,
+	7276,
+	7409,
+	7409,
+	7335,
+	7276,
+	7170,
+	5881,
+	7409,
+	7409,
+	5868,
+	5868,
+	7170,
+	5576,
+	2819,
+	7409,
+	7335,
+	5868,
+	7276,
 	7239,
-	7751,
-	8640,
-	9978,
-	6694,
-	7175,
-	7663,
-	8526,
-	6425,
-	6696,
-	7177,
-	7665,
-	10237,
-	6701,
-	5933,
-	6043,
-	6043,
-	5985,
-	5842,
-	4526,
-	2227,
-	5933,
-	5842,
-	4775,
-	6043,
-	6043,
-	4764,
-	4764,
-	6043,
-	5985,
-	4764,
-	5933,
-	5902,
-	3518,
-	3521,
-	328,
-	6566,
-	226,
-	6401,
-	231,
-	6422,
-	6543,
-	6393,
-	6412,
+	4331,
+	4334,
+	442,
+	8032,
+	295,
+	7844,
+	301,
+	7868,
+	8002,
+	7835,
+	7855,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_PhysicsModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_PhysicsModule_CodeGenModule = 

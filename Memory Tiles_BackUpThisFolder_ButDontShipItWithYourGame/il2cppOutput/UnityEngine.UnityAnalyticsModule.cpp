@@ -809,10 +809,8 @@ inline void Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_inline (Ac
 {
 	((  void (*) (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*, bool, const RuntimeMethod*))Action_1_Invoke_m69C8773D6967F3B224777183E24EA621CE056F8F_gshared_inline)(__this, ___obj0, method);
 }
-// System.Void UnityEngine.Analytics.AnalyticsSessionInfo/SessionStateChanged::Invoke(UnityEngine.Analytics.AnalyticsSessionState,System.Int64,System.Int64,System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateChanged_Invoke_mB9195B30A226CB3E53E470C24FD31E039E5BB4F5_inline (SessionStateChanged_t1180FB66E702B635CAD9316DC661D931277B2A0C* __this, int32_t ___sessionState0, int64_t ___sessionId1, int64_t ___sessionElapsedTime2, bool ___sessionChanged3, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Analytics.AnalyticsSessionInfo/IdentityTokenChanged::Invoke(System.String)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void IdentityTokenChanged_Invoke_m22D3DA825F0D6E701D050EFA3D35E84DFAC7F8D9_inline (IdentityTokenChanged_tE8CB0DAB5F6E640A847803F582E6CB6237742395* __this, String_t* ___token0, const RuntimeMethod* method) ;
+// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::Transaction(System.String,System.Decimal,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_Transaction_m237599F1B6EDBB64DB6CE0CC6ED9A6E4B3391F96 (String_t* ___productId0, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___amount1, String_t* ___currency2, String_t* ___receiptPurchaseData3, String_t* ___signature4, bool ___usingIAPService5, const RuntimeMethod* method) ;
 // System.Boolean System.String::IsNullOrEmpty(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478 (String_t* ___value0, const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String)
@@ -833,6 +831,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomEventData_Dispose_mF7FAD8DFA5AE64C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CustomEventData_AddDictionary_m8277B05DF41A78C3C8BEA8DB0724CABB32769221 (CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* __this, RuntimeObject* ___eventData0, const RuntimeMethod* method) ;
 // UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::SendCustomEvent(UnityEngine.Analytics.CustomEventData)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B (CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* ___eventData0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Analytics.AnalyticsSessionInfo/SessionStateChanged::Invoke(UnityEngine.Analytics.AnalyticsSessionState,System.Int64,System.Int64,System.Boolean)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionStateChanged_Invoke_mB9195B30A226CB3E53E470C24FD31E039E5BB4F5_inline (SessionStateChanged_t1180FB66E702B635CAD9316DC661D931277B2A0C* __this, int32_t ___sessionState0, int64_t ___sessionId1, int64_t ___sessionElapsedTime2, bool ___sessionChanged3, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Analytics.AnalyticsSessionInfo/IdentityTokenChanged::Invoke(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void IdentityTokenChanged_Invoke_m22D3DA825F0D6E701D050EFA3D35E84DFAC7F8D9_inline (IdentityTokenChanged_tE8CB0DAB5F6E640A847803F582E6CB6237742395* __this, String_t* ___token0, const RuntimeMethod* method) ;
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.IntPtr UnityEngine.Analytics.CustomEventData::Internal_Create(UnityEngine.Analytics.CustomEventData,System.String)
@@ -1180,6 +1182,310 @@ IL_0018:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Boolean UnityEngine.Analytics.Analytics::IsInitialized()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12 (const RuntimeMethod* method) 
+{
+	typedef bool (*Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12_ftn) ();
+	static Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Analytics.Analytics::IsInitialized()");
+	bool icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::Transaction(System.String,System.Double,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488 (String_t* ___productId0, double ___amount1, String_t* ___currency2, String_t* ___receiptPurchaseData3, String_t* ___signature4, bool ___usingIAPService5, const RuntimeMethod* method) 
+{
+	typedef int32_t (*Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488_ftn) (String_t*, double, String_t*, String_t*, String_t*, bool);
+	static Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Analytics.Analytics::Transaction(System.String,System.Double,System.String,System.String,System.String,System.Boolean)");
+	int32_t icallRetVal = _il2cpp_icall_func(___productId0, ___amount1, ___currency2, ___receiptPurchaseData3, ___signature4, ___usingIAPService5);
+	return icallRetVal;
+}
+// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::SendCustomEventName(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF (String_t* ___customEventName0, const RuntimeMethod* method) 
+{
+	typedef int32_t (*Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF_ftn) (String_t*);
+	static Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Analytics.Analytics::SendCustomEventName(System.String)");
+	int32_t icallRetVal = _il2cpp_icall_func(___customEventName0);
+	return icallRetVal;
+}
+// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::SendCustomEvent(UnityEngine.Analytics.CustomEventData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B (CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* ___eventData0, const RuntimeMethod* method) 
+{
+	typedef int32_t (*Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B_ftn) (CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169*);
+	static Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Analytics.Analytics::SendCustomEvent(UnityEngine.Analytics.CustomEventData)");
+	int32_t icallRetVal = _il2cpp_icall_func(___eventData0);
+	return icallRetVal;
+}
+// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::Transaction(System.String,System.Decimal,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_Transaction_m9BD442FC02953AC2C573E3340E098751608ADEBB (String_t* ___productId0, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___amount1, String_t* ___currency2, String_t* ___receiptPurchaseData3, String_t* ___signature4, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		String_t* L_0 = ___productId0;
+		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_1 = ___amount1;
+		String_t* L_2 = ___currency2;
+		String_t* L_3 = ___receiptPurchaseData3;
+		String_t* L_4 = ___signature4;
+		int32_t L_5;
+		L_5 = Analytics_Transaction_m237599F1B6EDBB64DB6CE0CC6ED9A6E4B3391F96(L_0, L_1, L_2, L_3, L_4, (bool)0, NULL);
+		V_0 = L_5;
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		int32_t L_6 = V_0;
+		return L_6;
+	}
+}
+// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::Transaction(System.String,System.Decimal,System.String,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_Transaction_m237599F1B6EDBB64DB6CE0CC6ED9A6E4B3391F96 (String_t* ___productId0, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___amount1, String_t* ___currency2, String_t* ___receiptPurchaseData3, String_t* ___signature4, bool ___usingIAPService5, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	int32_t V_3 = 0;
+	bool V_4 = false;
+	bool V_5 = false;
+	{
+		String_t* L_0 = ___productId0;
+		bool L_1;
+		L_1 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_0, NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_3 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_3);
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral9B6D0896D3D5AF34FAE5214A26FB32C1F2FC287F)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Analytics_Transaction_m237599F1B6EDBB64DB6CE0CC6ED9A6E4B3391F96_RuntimeMethod_var)));
+	}
+
+IL_0016:
+	{
+		String_t* L_4 = ___currency2;
+		bool L_5;
+		L_5 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_4, NULL);
+		V_1 = L_5;
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_7 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_7);
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral58355D994EF40A56CE1F99A26EF6FE9AC801DCB4)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Analytics_Transaction_m237599F1B6EDBB64DB6CE0CC6ED9A6E4B3391F96_RuntimeMethod_var)));
+	}
+
+IL_002b:
+	{
+		bool L_8;
+		L_8 = Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12(NULL);
+		V_2 = (bool)((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
+		bool L_9 = V_2;
+		if (!L_9)
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		V_3 = 1;
+		goto IL_0073;
+	}
+
+IL_003b:
+	{
+		String_t* L_10 = ___receiptPurchaseData3;
+		V_4 = (bool)((((RuntimeObject*)(String_t*)L_10) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_11 = V_4;
+		if (!L_11)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		String_t* L_12 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		___receiptPurchaseData3 = L_12;
+	}
+
+IL_004c:
+	{
+		String_t* L_13 = ___signature4;
+		V_5 = (bool)((((RuntimeObject*)(String_t*)L_13) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_14 = V_5;
+		if (!L_14)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		String_t* L_15 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		___signature4 = L_15;
+	}
+
+IL_005e:
+	{
+		String_t* L_16 = ___productId0;
+		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_17 = ___amount1;
+		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		double L_18;
+		L_18 = Convert_ToDouble_m6A951645AB4F5DC4577CFE062BE0E72A528261EA(L_17, NULL);
+		String_t* L_19 = ___currency2;
+		String_t* L_20 = ___receiptPurchaseData3;
+		String_t* L_21 = ___signature4;
+		bool L_22 = ___usingIAPService5;
+		int32_t L_23;
+		L_23 = Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488(L_16, L_18, L_19, L_20, L_21, L_22, NULL);
+		V_3 = L_23;
+		goto IL_0073;
+	}
+
+IL_0073:
+	{
+		int32_t L_24 = V_3;
+		return L_24;
+	}
+}
+// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::CustomEvent(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_CustomEvent_m663CDDCA04FF832169D1BCEE01C943A7FB6D4363 (String_t* ___customEventName0, RuntimeObject* ___eventData1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* V_0 = NULL;
+	int32_t V_1 = 0;
+	bool V_2 = false;
+	bool V_3 = false;
+	int32_t V_4 = 0;
+	bool V_5 = false;
+	{
+		String_t* L_0 = ___customEventName0;
+		bool L_1;
+		L_1 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_0, NULL);
+		V_2 = L_1;
+		bool L_2 = V_2;
+		if (!L_2)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_3 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_3);
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral117913D69EF572DF03D942BBEE8E969B6DD91DD5)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Analytics_CustomEvent_m663CDDCA04FF832169D1BCEE01C943A7FB6D4363_RuntimeMethod_var)));
+	}
+
+IL_0016:
+	{
+		bool L_4;
+		L_4 = Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12(NULL);
+		V_3 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
+		bool L_5 = V_3;
+		if (!L_5)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		V_4 = 1;
+		goto IL_0066;
+	}
+
+IL_0027:
+	{
+		RuntimeObject* L_6 = ___eventData1;
+		V_5 = (bool)((((RuntimeObject*)(RuntimeObject*)L_6) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_7 = V_5;
+		if (!L_7)
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		String_t* L_8 = ___customEventName0;
+		int32_t L_9;
+		L_9 = Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF(L_8, NULL);
+		V_4 = L_9;
+		goto IL_0066;
+	}
+
+IL_003b:
+	{
+		String_t* L_10 = ___customEventName0;
+		CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* L_11 = (CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169*)il2cpp_codegen_object_new(CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
+		CustomEventData__ctor_m56F78E56BEB38960137D4310EBA08871D1F8B4E5(L_11, L_10, NULL);
+		V_0 = L_11;
+		V_1 = 6;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0057:
+			{// begin finally (depth: 1)
+				CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* L_12 = V_0;
+				NullCheck(L_12);
+				CustomEventData_Dispose_mF7FAD8DFA5AE64CA3F3BBDCA22D1ACBE810FAEA6(L_12, NULL);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* L_13 = V_0;
+			RuntimeObject* L_14 = ___eventData1;
+			NullCheck(L_13);
+			bool L_15;
+			L_15 = CustomEventData_AddDictionary_m8277B05DF41A78C3C8BEA8DB0724CABB32769221(L_13, L_14, NULL);
+			CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* L_16 = V_0;
+			int32_t L_17;
+			L_17 = Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B(L_16, NULL);
+			V_1 = L_17;
+			goto IL_0061;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0061:
+	{
+		int32_t L_18 = V_1;
+		V_4 = L_18;
+		goto IL_0066;
+	}
+
+IL_0066:
+	{
+		int32_t L_19 = V_4;
+		return L_19;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1428,288 +1734,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IdentityTokenChanged_Invoke_m22D3DA825F0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Boolean UnityEngine.Analytics.Analytics::IsInitialized()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12 (const RuntimeMethod* method) 
-{
-	typedef bool (*Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12_ftn) ();
-	static Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Analytics.Analytics::IsInitialized()");
-	bool icallRetVal = _il2cpp_icall_func();
-	return icallRetVal;
-}
-// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::Transaction(System.String,System.Double,System.String,System.String,System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488 (String_t* ___productId0, double ___amount1, String_t* ___currency2, String_t* ___receiptPurchaseData3, String_t* ___signature4, bool ___usingIAPService5, const RuntimeMethod* method) 
-{
-	typedef int32_t (*Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488_ftn) (String_t*, double, String_t*, String_t*, String_t*, bool);
-	static Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Analytics.Analytics::Transaction(System.String,System.Double,System.String,System.String,System.String,System.Boolean)");
-	int32_t icallRetVal = _il2cpp_icall_func(___productId0, ___amount1, ___currency2, ___receiptPurchaseData3, ___signature4, ___usingIAPService5);
-	return icallRetVal;
-}
-// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::SendCustomEventName(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF (String_t* ___customEventName0, const RuntimeMethod* method) 
-{
-	typedef int32_t (*Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF_ftn) (String_t*);
-	static Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Analytics.Analytics::SendCustomEventName(System.String)");
-	int32_t icallRetVal = _il2cpp_icall_func(___customEventName0);
-	return icallRetVal;
-}
-// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::SendCustomEvent(UnityEngine.Analytics.CustomEventData)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B (CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* ___eventData0, const RuntimeMethod* method) 
-{
-	typedef int32_t (*Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B_ftn) (CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169*);
-	static Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Analytics.Analytics::SendCustomEvent(UnityEngine.Analytics.CustomEventData)");
-	int32_t icallRetVal = _il2cpp_icall_func(___eventData0);
-	return icallRetVal;
-}
-// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::Transaction(System.String,System.Decimal,System.String,System.String,System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_Transaction_m237599F1B6EDBB64DB6CE0CC6ED9A6E4B3391F96 (String_t* ___productId0, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___amount1, String_t* ___currency2, String_t* ___receiptPurchaseData3, String_t* ___signature4, bool ___usingIAPService5, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	bool V_0 = false;
-	bool V_1 = false;
-	bool V_2 = false;
-	int32_t V_3 = 0;
-	bool V_4 = false;
-	bool V_5 = false;
-	{
-		String_t* L_0 = ___productId0;
-		bool L_1;
-		L_1 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_0, NULL);
-		V_0 = L_1;
-		bool L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_0016;
-		}
-	}
-	{
-		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_3 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
-		NullCheck(L_3);
-		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral9B6D0896D3D5AF34FAE5214A26FB32C1F2FC287F)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Analytics_Transaction_m237599F1B6EDBB64DB6CE0CC6ED9A6E4B3391F96_RuntimeMethod_var)));
-	}
-
-IL_0016:
-	{
-		String_t* L_4 = ___currency2;
-		bool L_5;
-		L_5 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_4, NULL);
-		V_1 = L_5;
-		bool L_6 = V_1;
-		if (!L_6)
-		{
-			goto IL_002b;
-		}
-	}
-	{
-		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_7 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
-		NullCheck(L_7);
-		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral58355D994EF40A56CE1F99A26EF6FE9AC801DCB4)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Analytics_Transaction_m237599F1B6EDBB64DB6CE0CC6ED9A6E4B3391F96_RuntimeMethod_var)));
-	}
-
-IL_002b:
-	{
-		bool L_8;
-		L_8 = Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12(NULL);
-		V_2 = (bool)((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
-		bool L_9 = V_2;
-		if (!L_9)
-		{
-			goto IL_003b;
-		}
-	}
-	{
-		V_3 = 1;
-		goto IL_0073;
-	}
-
-IL_003b:
-	{
-		String_t* L_10 = ___receiptPurchaseData3;
-		V_4 = (bool)((((RuntimeObject*)(String_t*)L_10) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
-		bool L_11 = V_4;
-		if (!L_11)
-		{
-			goto IL_004c;
-		}
-	}
-	{
-		String_t* L_12 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
-		___receiptPurchaseData3 = L_12;
-	}
-
-IL_004c:
-	{
-		String_t* L_13 = ___signature4;
-		V_5 = (bool)((((RuntimeObject*)(String_t*)L_13) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
-		bool L_14 = V_5;
-		if (!L_14)
-		{
-			goto IL_005e;
-		}
-	}
-	{
-		String_t* L_15 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
-		___signature4 = L_15;
-	}
-
-IL_005e:
-	{
-		String_t* L_16 = ___productId0;
-		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_17 = ___amount1;
-		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
-		double L_18;
-		L_18 = Convert_ToDouble_m6A951645AB4F5DC4577CFE062BE0E72A528261EA(L_17, NULL);
-		String_t* L_19 = ___currency2;
-		String_t* L_20 = ___receiptPurchaseData3;
-		String_t* L_21 = ___signature4;
-		bool L_22 = ___usingIAPService5;
-		int32_t L_23;
-		L_23 = Analytics_Transaction_m6A16C2852B2365FFA31B407BE5EBF4A6525B5488(L_16, L_18, L_19, L_20, L_21, L_22, NULL);
-		V_3 = L_23;
-		goto IL_0073;
-	}
-
-IL_0073:
-	{
-		int32_t L_24 = V_3;
-		return L_24;
-	}
-}
-// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::CustomEvent(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_CustomEvent_m663CDDCA04FF832169D1BCEE01C943A7FB6D4363 (String_t* ___customEventName0, RuntimeObject* ___eventData1, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* V_0 = NULL;
-	int32_t V_1 = 0;
-	bool V_2 = false;
-	bool V_3 = false;
-	int32_t V_4 = 0;
-	bool V_5 = false;
-	{
-		String_t* L_0 = ___customEventName0;
-		bool L_1;
-		L_1 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_0, NULL);
-		V_2 = L_1;
-		bool L_2 = V_2;
-		if (!L_2)
-		{
-			goto IL_0016;
-		}
-	}
-	{
-		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_3 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
-		NullCheck(L_3);
-		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral117913D69EF572DF03D942BBEE8E969B6DD91DD5)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Analytics_CustomEvent_m663CDDCA04FF832169D1BCEE01C943A7FB6D4363_RuntimeMethod_var)));
-	}
-
-IL_0016:
-	{
-		bool L_4;
-		L_4 = Analytics_IsInitialized_mBC7670704DE959791C8DF859A7C66D5DD5168F12(NULL);
-		V_3 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
-		bool L_5 = V_3;
-		if (!L_5)
-		{
-			goto IL_0027;
-		}
-	}
-	{
-		V_4 = 1;
-		goto IL_0066;
-	}
-
-IL_0027:
-	{
-		RuntimeObject* L_6 = ___eventData1;
-		V_5 = (bool)((((RuntimeObject*)(RuntimeObject*)L_6) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
-		bool L_7 = V_5;
-		if (!L_7)
-		{
-			goto IL_003b;
-		}
-	}
-	{
-		String_t* L_8 = ___customEventName0;
-		int32_t L_9;
-		L_9 = Analytics_SendCustomEventName_m714D4EBF35293ACA77E6B8EDA5D454B760992CCF(L_8, NULL);
-		V_4 = L_9;
-		goto IL_0066;
-	}
-
-IL_003b:
-	{
-		String_t* L_10 = ___customEventName0;
-		CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* L_11 = (CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169*)il2cpp_codegen_object_new(CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169_il2cpp_TypeInfo_var);
-		NullCheck(L_11);
-		CustomEventData__ctor_m56F78E56BEB38960137D4310EBA08871D1F8B4E5(L_11, L_10, NULL);
-		V_0 = L_11;
-		V_1 = 6;
-	}
-	{
-		auto __finallyBlock = il2cpp::utils::Finally([&]
-		{
-
-FINALLY_0057:
-			{// begin finally (depth: 1)
-				CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* L_12 = V_0;
-				NullCheck(L_12);
-				CustomEventData_Dispose_mF7FAD8DFA5AE64CA3F3BBDCA22D1ACBE810FAEA6(L_12, NULL);
-				return;
-			}// end finally (depth: 1)
-		});
-		try
-		{// begin try (depth: 1)
-			CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* L_13 = V_0;
-			RuntimeObject* L_14 = ___eventData1;
-			NullCheck(L_13);
-			bool L_15;
-			L_15 = CustomEventData_AddDictionary_m8277B05DF41A78C3C8BEA8DB0724CABB32769221(L_13, L_14, NULL);
-			CustomEventData_t62D89E3B19583D0C331B5E717FC09B41EE094169* L_16 = V_0;
-			int32_t L_17;
-			L_17 = Analytics_SendCustomEvent_mDFD010BF86A285FB5620405455D04D31FD0F014B(L_16, NULL);
-			V_1 = L_17;
-			goto IL_0061;
-		}// end try (depth: 1)
-		catch(Il2CppExceptionWrapper& e)
-		{
-			__finallyBlock.StoreException(e.ex);
-		}
-	}
-
-IL_0061:
-	{
-		int32_t L_18 = V_1;
-		V_4 = L_18;
-		goto IL_0066;
-	}
-
-IL_0066:
-	{
-		int32_t L_19 = V_4;
-		return L_19;
-	}
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
