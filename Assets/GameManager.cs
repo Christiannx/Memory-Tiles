@@ -208,7 +208,7 @@ public class GameManager : MonoBehaviour {
                 save.LoadData();
                 var highscore = save.highscore;
                 if (levelProgression > highscore) {
-                    save.highscore = levelProgression;
+                    save.highscore = levelProgression - 1;
                     save.SaveData();
                 }
             }
