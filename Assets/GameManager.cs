@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField] float previewDelay = 1f;
     [SerializeField] float finishAnimationDelay = 0.3f;
     [SerializeField] float tileEndDelay = 0.3f;
+    [Space]
+    [SerializeField] TextAsset difficultyConfig;
 
     UIManager ui;
     Save save;
@@ -338,9 +340,9 @@ public class GameManager : MonoBehaviour {
         ui.HideGameOverMenu();
         ShowHint(currentIndexInSequence, 2);
     }
-
+    
     void LoadDifficultyConfig() {
-        using (var reader = new StreamReader(Application.dataPath + "/Resources/difficulty.csv")) {
+        using (var reader = new StreamReader(StreamFromString(difficultyConfig.text))) {
             while (!reader.EndOfStream) {
                 string line = reader.ReadLine();
                 string[] valuesStr = line.Split(";");
@@ -362,5 +364,9 @@ public class GameManager : MonoBehaviour {
                 }
             }
         }
+    }
+
+    static MemoryStream StreamFromString(string value) {
+        return new MemoryStream(System.Text.Encoding.UTF8.GetBytes(value ?? ""));
     }
 }

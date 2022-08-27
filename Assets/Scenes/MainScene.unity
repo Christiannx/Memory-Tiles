@@ -1444,6 +1444,7 @@ MonoBehaviour:
   previewDelay: 1
   finishAnimationDelay: 0.08
   tileEndDelay: 0.3
+  difficultyConfig: {fileID: 4900000, guid: 4ec98bb68dfe496429b9442225a8411f, type: 3}
   levelProgression: 1
 --- !u!4 &395339595
 Transform:
