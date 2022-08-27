@@ -54,7 +54,7 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     IEnumerator PlaySound() {
-        if (!FindObjectOfType<Save>().sound) yield break;
+        if (!save.sound) yield break;
         foreach (var clip in playAudios) {
             click.PlayOneShot(clip);
             yield return new WaitForSeconds(0.07f);
@@ -66,14 +66,14 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     public void WorkInProgress() {
-        canvas.Play("WIP", -1, 0);
+        CrossPlatform.ShowMessage("Work in progress...");
         PlayClick();
     }
 
     public void ShowSettings() => Show(settingsPage);
-    public void ShowConfirmation() {confirmationPage.SetBool("Show", true); click.Play();}
+    public void ShowConfirmation() {confirmationPage.SetBool("Show", true); PlayClick();}
     public void HideSettings() => Hide(settingsPage);
-    public void HideConfirmation() {confirmationPage.SetBool("Show", false); click.Play();}
+    public void HideConfirmation() {confirmationPage.SetBool("Show", false); PlayClick();}
 
     public void Show(Animator window) {
         darken.SetBool("Darker", true);
@@ -88,21 +88,19 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     public void Reset() {
-        FindObjectOfType<Save>().ResetData(); 
+        save.ResetData(); 
         highscoreLabel.text = "level - ";
         HideConfirmation();
         HideSettings();
     }
 
     public void PlayClick() {
-        if (FindObjectOfType<Save>().sound) {
-            click.Play();
-        }
+        if (!save.sound) return;
+        click.Play();
     }
 
     public void SwitchHasSound() {
-        var save = FindObjectOfType<Save>();
-        save.sound = !save.sound;
+        save.sound = soundToggle.isOn;
     }
 
     public void DisableAllButtons() {

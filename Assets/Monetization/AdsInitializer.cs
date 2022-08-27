@@ -11,7 +11,6 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener {
     private string _gameId;
  
     void Awake() {
-        Debug.Log("Hello");
         if (!initialized)
             InitializeAds();
     }
