@@ -431,7 +431,13 @@ extern void U3CU3Ec__cctor_m5FC3392DB3E948EE39BCD0CD9712CEB588D082DB (void);
 extern void U3CU3Ec__ctor_m8CFA49442D43B8180925F03EC1DB310352B1BE5B (void);
 // 0x000000D2 System.Void UIManager/<>c::<DontDestroy>b__40_0(UnityEngine.GameObject)
 extern void U3CU3Ec_U3CDontDestroyU3Eb__40_0_mBBD43D6190C6A9FB9DEA6455A3B2DA9C39E390FB (void);
-static Il2CppMethodPointer s_methodPointers[210] = 
+// 0x000000D3 System.Byte[] UnityEngine.Purchasing.Security.GooglePlayTangle::Data()
+extern void GooglePlayTangle_Data_mD6394B09B483524999127A050B7D6083DA163733 (void);
+// 0x000000D4 System.Void UnityEngine.Purchasing.Security.GooglePlayTangle::.ctor()
+extern void GooglePlayTangle__ctor_m11916D8A6CA30A63917A62D5F91794989023E59C (void);
+// 0x000000D5 System.Void UnityEngine.Purchasing.Security.GooglePlayTangle::.cctor()
+extern void GooglePlayTangle__cctor_mD731279B08AD1544F5B70AE64DC02B9E1BF0E6F7 (void);
+static Il2CppMethodPointer s_methodPointers[213] = 
 {
 	AdsManager_Awake_m41E841D8C091F00F7AB09B5403D9C3BD4BED7EBB,
 	AdsManager_Start_m00CAFF84B03355B41A941006E80DB2F1D49E3EF3,
@@ -643,8 +649,11 @@ static Il2CppMethodPointer s_methodPointers[210] =
 	U3CU3Ec__cctor_m5FC3392DB3E948EE39BCD0CD9712CEB588D082DB,
 	U3CU3Ec__ctor_m8CFA49442D43B8180925F03EC1DB310352B1BE5B,
 	U3CU3Ec_U3CDontDestroyU3Eb__40_0_mBBD43D6190C6A9FB9DEA6455A3B2DA9C39E390FB,
+	GooglePlayTangle_Data_mD6394B09B483524999127A050B7D6083DA163733,
+	GooglePlayTangle__ctor_m11916D8A6CA30A63917A62D5F91794989023E59C,
+	GooglePlayTangle__cctor_mD731279B08AD1544F5B70AE64DC02B9E1BF0E6F7,
 };
-static const int32_t s_InvokerIndices[210] = 
+static const int32_t s_InvokerIndices[213] = 
 {
 	7433,
 	7433,
@@ -856,12 +865,15 @@ static const int32_t s_InvokerIndices[210] =
 	13053,
 	7433,
 	6004,
+	13012,
+	7433,
+	13053,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	210,
+	213,
 	s_methodPointers,
 	0,
 	NULL,
