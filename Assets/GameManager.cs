@@ -315,7 +315,9 @@ public class GameManager : MonoBehaviour {
     IEnumerator AnimateFinishingSequence(List<List<Tile>> tilesInOrder) {
         foreach (var iteration in tilesInOrder) {
             foreach (var tile in iteration) {
-                tile.Trigger(Valid);
+                if (tile.GetComponent<Animator>()) {
+                    tile.Trigger(Valid);
+                }
             }
 
             yield return new WaitForSeconds(finishAnimationDelay);

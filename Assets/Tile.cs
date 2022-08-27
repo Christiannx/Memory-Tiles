@@ -68,6 +68,7 @@ public class Tile : MonoBehaviour {
 
     public void DestroyWithAnimation() {
         animator.Play("End", -1, 0);
+        Destroy(this.gameObject, 1f);
     }
 
     public void DestroyImmediately() {
