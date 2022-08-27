@@ -45,6 +45,7 @@ public class Save : MonoBehaviour {
 
     public void ResetData() {
         PlayerPrefs.DeleteKey(HIGHSCORE_KEY);
+        highscore = 0;
     }
 
     public void ResetDataIncludingRemovedAds() => PlayerPrefs.DeleteAll();

@@ -52,11 +52,15 @@ public class UIManager : MonoBehaviour {
         nextButton.GetComponent<Animator>().ResetTrigger("Appear");
         nextButton.GetComponent<Animator>().SetTrigger("NextLevel");
 
-        levelLabel.text = "Level " + level;
+        levelLabel.text = "Level " + level + " ";
         pauseLevelLabel.text = "Level " + level;
         gameOverLevelLabel.text = "You reached level " + level;
 
         highscoreImage.gameObject.SetActive(save.highscore <= level && save.highscore != 0);
+
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform) highscoreImage.transform.parent);
+        LayoutRebuilder.MarkLayoutForRebuild((RectTransform) highscoreImage.transform.parent);
     }
 
     public void FinishLevel() {
