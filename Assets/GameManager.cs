@@ -269,7 +269,7 @@ public class GameManager : MonoBehaviour {
         }
     }
     
-    void ShowHintWrapper() => ShowHint(currentIndexInSequence, 2);
+    void ShowHintWrapper() => ShowHint(currentIndexInSequence, 3);
 
     List<List<Tile>> GenerateFinishingSequence(Tile startingTile) {
         var tilesInOrder = new List<List<Tile>>();
@@ -338,9 +338,9 @@ public class GameManager : MonoBehaviour {
         ui.IncreaseHearts(lives);
         ui.HidePauseMenu();
         ui.HideGameOverMenu();
-        ShowHint(currentIndexInSequence, 2);
+        ShowHint(currentIndexInSequence, 3);
     }
-    
+
     void LoadDifficultyConfig() {
         using (var reader = new StreamReader(StreamFromString(difficultyConfig.text))) {
             while (!reader.EndOfStream) {
